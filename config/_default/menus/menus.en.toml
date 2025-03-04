@@ -51,7 +51,7 @@
 [[main]]
   name = "Join our Community"
   url = "https://writetechhub.org/our-community/"
-  weight = 30
+  weight = 35
 
  [[social]]
    name = "X"
