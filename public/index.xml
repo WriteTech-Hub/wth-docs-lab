@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to WriteTech Hub Docs Lab on My Docs</title>
+    <title>Welcome to WriteTech Hub Docs Lab on WTH Docs Lab</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome to WriteTech Hub Docs Lab on My Docs</description>
+    <description>Recent content in Welcome to WriteTech Hub Docs Lab on WTH Docs Lab</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright (c) 2020-2024 Thulite</copyright>
@@ -18,17 +18,17 @@
     </item>
     <item>
       <title>Example Guide</title>
-      <link>http://localhost:1313/docs/guides/example-guide/</link>
+      <link>http://localhost:1313/docs/user-guides/example-guide/</link>
       <pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate>
-      <guid>http://localhost:1313/docs/guides/example-guide/</guid>
+      <guid>http://localhost:1313/docs/user-guides/example-guide/</guid>
       <description>&lt;p&gt;Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Example Reference</title>
-      <link>http://localhost:1313/docs-copy/reference/example/</link>
-      <pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate>
-      <guid>http://localhost:1313/docs-copy/reference/example/</guid>
-      <description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;</description>
+      <title>Example Guide</title>
+      <link>http://localhost:1313/guides/getting-started/example/</link>
+      <pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate>
+      <guid>http://localhost:1313/guides/getting-started/example/</guid>
+      <description>&lt;p&gt;Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Example Reference</title>
@@ -38,17 +38,24 @@
       <description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Resources</title>
-      <link>http://localhost:1313/docs-copy/resources/</link>
-      <pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate>
-      <guid>http://localhost:1313/docs-copy/resources/</guid>
-      <description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description>
+      <title>Example Reference</title>
+      <link>http://localhost:1313/guides/roadmap/example/</link>
+      <pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate>
+      <guid>http://localhost:1313/guides/roadmap/example/</guid>
+      <description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resources</title>
       <link>http://localhost:1313/docs/resources/</link>
       <pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate>
       <guid>http://localhost:1313/docs/resources/</guid>
+      <description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resources</title>
+      <link>http://localhost:1313/guides/resources/</link>
+      <pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate>
+      <guid>http://localhost:1313/guides/resources/</guid>
       <description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description>
     </item>
     <item>

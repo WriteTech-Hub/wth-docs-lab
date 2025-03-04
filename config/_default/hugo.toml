@@ -1,7 +1,7 @@
-title = "My Docs"
+title = "WTH Docs Lab"
 baseurl = "http://localhost/"
 canonifyURLs = false
-disableAliases = true
+disableAliases = false
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
 enableEmoji = true
