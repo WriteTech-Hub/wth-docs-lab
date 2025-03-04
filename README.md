@@ -2,12 +2,8 @@
 
 This repository is designed to help **technical writers** improve documentation skills, compare different styles of documentation, and onboard into WriteTech Hub.
 
-## 🔹 How to Use This Repository
-1. **Explore the Onboarding Roadmap** → Follow structured learning paths.
-2. **Compare Documentation** → Learn from before-and-after examples.
-3. **Contribute & Improve** → Join discussions, review docs, and contribute.
 
-# WTH Docs Lab
+# Welcome to WTH Docs Lab!
 
 ## Introduction
 
@@ -17,6 +13,11 @@ The **WTH Docs Lab** repository is created to serve two key purposes:
 2. **Technical Writing Learning Lab** – Providing onboarding resources, best practices, and structured learning paths for technical writers to improve their documentation skills.
 
 This repository is still in its early stages, and we are in the process of structuring it according to our planned information architecture. We will be integrating our portfolio samples, refining the layout, and ensuring it becomes a useful resource for both internal team members and external contributors.
+
+## 🔹 How to Use This Repository
+1. **Explore the Onboarding Roadmap** → Follow structured learning paths.
+2. **Compare Documentation** → Learn from before-and-after examples.
+3. **Contribute & Improve** → Join discussions, review docs, and contribute.
 
 ## Technology Stack
 
@@ -104,7 +105,7 @@ This will start a local development server, and you can access the documentation
 http://localhost:1313/
 ```
 
-<!-- ### Step 6: Building the Site for Production
+### Step 6: Building the Site for Production
 
 To generate a static version of the site for deployment:
 
@@ -114,7 +115,7 @@ To generate a static version of the site for deployment:
 npm run build
 ```
 
-The static files will be generated in the `public/` directory. -->
+The static files will be generated in the `public/` directory.
 
 ## Contribution Guidelines
 
