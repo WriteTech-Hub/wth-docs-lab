@@ -77,7 +77,7 @@ Clone the repository:
 
 ```sh
 git clone https://github.com/WriteTechHub/wth-docs-lab.git
-cd wth-docs
+cd wth-docs-lab
 ```
 
 ### Step 4: Install Dependencies
