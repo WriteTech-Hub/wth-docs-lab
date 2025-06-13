@@ -1,6 +1,6 @@
 # Welcome to WTH Docs Lab! 🚀
 
-This repository is designed to help **technical writers** improve documentation skills, compare different styles of documentation, and onboard into WriteTech Hub.
+This repository is designed to help technical writers improve documentation skills, compare different styles of documentation, and onboard into WriteTech Hub.
 
 ## Introduction
 
