@@ -32,13 +32,13 @@ Does this PR require documentation?
   - [ ] The ticket has been assigned to the docs team
 - [ ] No → Documentation is not needed for this PR
 
-> ⚠️ Adding the `documentation` label allows GitHub Actions to auto-trigger downstream processes like ticket creation or docs assignment. Please ensure the label is applied if applicable.
+> ⚠️ Adding the `needs-docs` label allows GitHub Actions to auto-trigger downstream processes like ticket creation or docs assignment. Please ensure the label is applied if applicable.
 
 ### 🏷 Required Labels
 
 Please confirm that the appropriate labels are applied:
 
-- [ ] `documentation` – for doc-relevant changes
+- [ ] `needs-docs` – for doc-relevant changes
 - [ ] `release-note` – if there are user-visible changes
 - [ ] Any others relevant to this PR
 
