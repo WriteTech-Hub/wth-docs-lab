@@ -27,7 +27,7 @@ Select all that apply:
 Does this PR require documentation?
 
 - [ ] Yes → If yes, complete the steps below
-  - [ ] I have added the `documentation` label to this PR ✅
+  - [ ] I have added the `needs-docs` label to this PR ✅
   - [ ] A documentation ticket has been created
   - [ ] The ticket has been assigned to the docs team
 - [ ] No → Documentation is not needed for this PR
