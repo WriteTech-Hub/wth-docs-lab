@@ -1,0 +1,63 @@
+name: Validate PR Template
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Validate PR content
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const prBody = pr.body || "";
+
+            const missing = [];
+
+            const prTypeSelected = prBody.match(/\* \[x\]|\* \[X\]/);
+            if (!prTypeSelected) {
+              missing.push("No PR type selected in the checklist.");
+            }
+
+            const requiresDocs = prBody.includes("This PR **requires** documentation");
+            if (requiresDocs) {
+              if (!prBody.match(/\* \[x\] I have added the `documentation` label/i)) {
+                missing.push("Missing check: `documentation` label not confirmed.");
+              }
+              if (!prBody.match(/\* \[x\] A documentation ticket has been created/i)) {
+                missing.push("Missing check: Documentation ticket not marked as created.");
+              }
+              if (!prBody.match(/\* \[x\] The ticket has been assigned to the docs team/i)) {
+                missing.push("Missing check: Documentation ticket not marked as assigned.");
+              }
+            }
+
+            if (missing.length > 0) {
+              const commentBody = `
+🚫 **PR Template Validation Failed**
+
+This pull request is missing required checklist items:
+
+${missing.map(item => `- ${item}`).join('\n')}
+
+Please update the PR description to fix these issues. Once updated, this check will re-run automatically. ✅
+              `.trim();
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body: commentBody
+              });
+
+              core.setFailed("PR template validation failed. See PR comments for details.");
+            } else {
+              console.log("PR template is valid ✅");
+            }
