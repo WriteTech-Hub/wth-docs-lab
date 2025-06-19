@@ -45,8 +45,6 @@ jobs:
             // Check that exactly one is selected
             if (yesSelected && noSelected) {
               missing.push('Please select only **one** option for the documentation requirement: Yes or No (not both).');
-            } else if (!yesSelected && !noSelected) {
-              missing.push('Please select either "Yes" or "No" in the documentation requirement section.');
             }
 
             // Fail if neither Yes nor No is selected
