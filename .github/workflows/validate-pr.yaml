@@ -26,21 +26,6 @@ jobs:
             const prLabels = pr.labels.map(label => label.name.toLowerCase());
             const missing = [];
 
-            // ----- 2. Validate documentation section
-            const docsSectionMatch = prBody.match(/Does this PR require documentation\?([\s\S]*?)(?:###|$)/i);
-            const docsSection = docsSectionMatch ? docsSectionMatch[1] : '';
-
-            // Declare first, then use
-            let yesSelected = /- \[x\] Yes/i.test(docsSection);
-            let noSelected = /- \[x\] No/i.test(docsSection);
-
-            // Check that exactly one is selected
-            if (yesSelected && noSelected) {
-              missing.push('Please select only **one** option for the documentation requirement: Yes or No (not both).');
-            } else if (!yesSelected && !noSelected) {
-              missing.push('Please select either "Yes" or "No" in the documentation requirement section.');
-            }
-
             if (!hasCheckedType) {
               missing.push('No PR type selected in the checklist.');
             }
@@ -51,6 +36,13 @@ jobs:
 
             const yesSelected = /- \[x\] Yes/i.test(docsSection);
             const noSelected = /- \[x\] No/i.test(docsSection);
+
+            // Check that exactly one is selected
+            if (yesSelected && noSelected) {
+              missing.push('Please select only **one** option for the documentation requirement: Yes or No (not both).');
+            } else if (!yesSelected && !noSelected) {
+              missing.push('Please select either "Yes" or "No" in the documentation requirement section.');
+            }
 
             // Fail if neither Yes nor No is selected
             if (!yesSelected && !noSelected) {
