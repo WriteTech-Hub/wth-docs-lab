@@ -26,6 +26,11 @@ jobs:
             const prLabels = pr.labels.map(label => label.name.toLowerCase());
             const missing = [];
 
+            // 1. Validate PR Type section
+            const prTypeMatch = prBody.match(/###\s*[^#]*PR Type([\s\S]*?)(?:###|$)/i);
+            const prTypeSection = prTypeMatch ? prTypeMatch[1] : '';
+            const hasCheckedType = /[-*]\s+\[(x|X)\]/.test(prTypeSection);
+
             if (!hasCheckedType) {
               missing.push('No PR type selected in the checklist.');
             }
