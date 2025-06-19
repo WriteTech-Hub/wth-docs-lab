@@ -28,19 +28,9 @@ Does this PR require documentation?
 
 - [ ] Yes → If yes, complete the steps below
   - [ ] I have added the `needs-docs` label to this PR ✅
-  - [ ] A documentation ticket has been created
-  - [ ] The ticket has been assigned to the docs team
 - [ ] No → Documentation is not needed for this PR
 
 > ⚠️ Adding the `needs-docs` label allows GitHub Actions to auto-trigger downstream processes like ticket creation or docs assignment. Please ensure the label is applied if applicable.
-
-### 🏷 Required Labels
-
-Please confirm that the appropriate labels are applied:
-
-- [ ] `needs-docs` – for doc-relevant changes
-- [ ] `release-note` – if there are user-visible changes
-- [ ] Any others relevant to this PR
 
 ### 🔗 Related Issues/Tickets
 

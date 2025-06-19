@@ -61,13 +61,6 @@ jobs:
               if (!prLabels.includes('needs-docs')) {
                 missing.push('GitHub label: `needs-docs` label is not actually applied to the PR.');
               }
-
-              if (!/\[x\] A documentation ticket has been created/i.test(docsSection)) {
-                missing.push('Documentation ticket is not marked as created.');
-              }
-              if (!/\[x\] The ticket has been assigned to the docs team/i.test(docsSection)) {
-                missing.push('Documentation ticket is not marked as assigned to the docs team.');
-              }
             }
 
             // 3. Report
