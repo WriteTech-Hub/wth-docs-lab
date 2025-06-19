@@ -26,6 +26,14 @@ jobs:
             const prLabels = pr.labels.map(label => label.name.toLowerCase());
             const missing = [];
 
+            // ----- 2. Validate documentation section
+            const docsSectionMatch = prBody.match(/Does this PR require documentation\?([\s\S]*?)(?:###|$)/i);
+            const docsSection = docsSectionMatch ? docsSectionMatch[1] : '';
+
+            // Declare first, then use
+            let yesSelected = /- \[x\] Yes/i.test(docsSection);
+            let noSelected = /- \[x\] No/i.test(docsSection);
+
             // Check that exactly one is selected
             if (yesSelected && noSelected) {
               missing.push('Please select only **one** option for the documentation requirement: Yes or No (not both).');
