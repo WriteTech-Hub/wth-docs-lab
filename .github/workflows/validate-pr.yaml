@@ -1,0 +1,85 @@
+name: Validate PR
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+      - labeled
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Validate PR content and labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const prBody = pr.body || '';
+            const prLabels = pr.labels.map(label => label.name.toLowerCase());
+            const missing = [];
+
+            // 1. Validate PR Type section
+            const prTypeMatch = prBody.match(/###\s*[^#]*PR Type([\s\S]*?)(?:###|$)/i);
+            const prTypeSection = prTypeMatch ? prTypeMatch[1] : '';
+            const hasCheckedType = /[-*]\s+\[(x|X)\]/.test(prTypeSection);
+
+            if (!hasCheckedType) {
+              missing.push('No PR type selected in the checklist.');
+            }
+
+            // 2. Validate documentation section
+            const docsSectionMatch = prBody.match(/Does this PR require documentation\?([\s\S]*?)(?:###|$)/i);
+            const docsSection = docsSectionMatch ? docsSectionMatch[1] : '';
+
+            const yesSelected = /- \[x\] Yes/i.test(docsSection);
+            const noSelected = /- \[x\] No/i.test(docsSection);
+
+            if (yesSelected && !noSelected) {
+              if (!/\[x\] I have added the `needs-docs` label/i.test(docsSection)) {
+                missing.push('PR body: `needs-docs` label checkbox is not checked.');
+              }
+
+              if (!prLabels.includes('needs-docs')) {
+                missing.push('GitHub label: `needs-docs` label is not actually applied to the PR.');
+              }
+
+              if (!/\[x\] A documentation ticket has been created/i.test(docsSection)) {
+                missing.push('Documentation ticket is not marked as created.');
+              }
+              if (!/\[x\] The ticket has been assigned to the docs team/i.test(docsSection)) {
+                missing.push('Documentation ticket is not marked as assigned to the docs team.');
+              }
+            }
+
+            // 3. Report
+            if (missing.length > 0) {
+              const commentBody = `
+              🚫 **PR Template Validation Failed**
+
+              The following required checklist items are missing or incomplete:
+
+              ${missing.map(m => `- ${m}`).join('\n')}
+
+              Please update the PR description and/or labels.
+              _This check will re-run automatically when the PR is edited or labeled._
+              `.trim();
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body: commentBody,
+              });
+
+              core.setFailed('PR template validation failed. See PR comments for details.');
+            } else {
+              console.log('PR template is valid ✅');
+            }
