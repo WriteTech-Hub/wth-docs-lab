@@ -1,8 +1,12 @@
-name: Validate PR Template
+name: Validate PR
 
 on:
   pull_request:
-    types: [opened, edited, reopened, synchronize]
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
 
 jobs:
   validate-pr:
@@ -41,13 +45,13 @@ jobs:
 
             if (missing.length > 0) {
               const commentBody = `
-🚫 **PR Template Validation Failed**
+              🚫 **PR Template Validation Failed**
 
-This pull request is missing required checklist items:
+              This pull request is missing required checklist items:
 
-${missing.map(item => `- ${item}`).join('\n')}
+              ${missing.map(item => `- ${item}`).join('\n')}
 
-Please update the PR description to fix these issues. Once updated, this check will re-run automatically. ✅
+              Please update the PR description to fix these issues. Once updated, this check will re-run automatically. ✅
               `.trim();
 
               await github.rest.issues.createComment({
