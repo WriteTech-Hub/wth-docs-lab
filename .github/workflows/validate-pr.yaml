@@ -26,10 +26,12 @@ jobs:
             const prLabels = pr.labels.map(label => label.name.toLowerCase());
             const missing = [];
 
-            // 1. Validate PR Type section
-            const prTypeMatch = prBody.match(/###\s*[^#]*PR Type([\s\S]*?)(?:###|$)/i);
-            const prTypeSection = prTypeMatch ? prTypeMatch[1] : '';
-            const hasCheckedType = /[-*]\s+\[(x|X)\]/.test(prTypeSection);
+            // Check that exactly one is selected
+            if (yesSelected && noSelected) {
+              missing.push('Please select only **one** option for the documentation requirement: Yes or No (not both).');
+            } else if (!yesSelected && !noSelected) {
+              missing.push('Please select either "Yes" or "No" in the documentation requirement section.');
+            }
 
             if (!hasCheckedType) {
               missing.push('No PR type selected in the checklist.');
