@@ -10,7 +10,7 @@ Select all that apply:
 - [ ] Bug Fix
 - [ ] Refactor
 - [ ] Chore (tooling, CI, cleanup)
-- [ ] Documentation-only
+- [ ] Documentation
 - [ ] Other: <!-- Please describe -->
 
 ### ⚙️ Development Checklist
