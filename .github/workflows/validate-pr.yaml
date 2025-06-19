@@ -42,6 +42,12 @@ jobs:
             const yesSelected = /- \[x\] Yes/i.test(docsSection);
             const noSelected = /- \[x\] No/i.test(docsSection);
 
+            // Fail if neither Yes nor No is selected
+            if (!yesSelected && !noSelected) {
+              missing.push('Please select either "Yes" or "No" for the documentation requirement section.');
+            }
+
+            // Proceed with full validation only if "Yes" is selected
             if (yesSelected && !noSelected) {
               if (!/\[x\] I have added the `needs-docs` label/i.test(docsSection)) {
                 missing.push('PR body: `needs-docs` label checkbox is not checked.');
