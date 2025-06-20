@@ -13,15 +13,6 @@ Select all that apply:
 - [ ] Documentation
 - [ ] Other: <!-- Please describe -->
 
-### ⚙️ Development Checklist
-
-(For dev PRs only)
-
-- [ ] Code has been tested (unit/integration)
-- [ ] Follows coding conventions and passes lint checks
-- [ ] All configs/env changes are documented
-- [ ] Changes are backward-compatible (if applicable)
-
 ### 📚 Documentation Requirements
 
 Does this PR require documentation?
