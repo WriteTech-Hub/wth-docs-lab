@@ -13,7 +13,7 @@ If this is your first time contributing to open source, welcome! 🎉
 To add your name to the contributor list:
 
 1. Fork this repository.
-2. Navigate to `contributors/README.md`.
+2. Open the `CONTRIBUTORS.md` file located in the root of the repository.
 3. Follow the instructions and format provided near the top of the file.
 4. Add your entry below the "Add your entry below this line" comment.
 5. Commit your changes and open a pull request (PR).
