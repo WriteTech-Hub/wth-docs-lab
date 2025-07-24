@@ -1,6 +1,6 @@
 # Welcome to WTH Docs Lab! 🚀
 
-This repository is designed to help **technical writers** improve documentation skills, compare different styles of documentation, and onboard into WriteTech Hub.
+This repository is designed to help technical writers improve documentation skills, compare different styles of documentation, and onboard into WriteTech Hub.
 
 ## Introduction
 
@@ -119,6 +119,7 @@ The static files will be generated in the `public/` directory.
 As we finalize the repository structure, contributions should align with the following:
 
 - Submit all changes via pull requests for review.
+- Please read our [Contribution Guidelines](./CONTRIBUTING.md) before making a contribution.
 
 ## Next Steps
 
