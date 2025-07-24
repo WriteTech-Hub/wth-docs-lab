@@ -119,6 +119,7 @@ The static files will be generated in the `public/` directory.
 As we finalize the repository structure, contributions should align with the following:
 
 - Submit all changes via pull requests for review.
+- Please read our [Contribution Guidelines](./CONTRIBUTING.md) before making a contribution.
 
 ## Next Steps
 
