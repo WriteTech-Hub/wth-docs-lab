@@ -1,33 +1,17 @@
-### 📌 Pull Request Overview
+## Description
 
-<!-- Describe the change you're making. Include any context or screenshots if needed. -->
+Please briefly describe what this pull request does.
 
-### 📝 PR Type
+> Example:
+> - Added myself to the contributor list
+> - Fixed a typo in the README
+> - Improved formatting in the setup guide
 
-Select all that apply:
+## Checklist
 
-- [ ] Feature
-- [ ] Bug Fix
-- [ ] Refactor
-- [ ] Chore (tooling, CI, cleanup)
-- [ ] Documentation
-- [ ] Other: <!-- Please describe -->
+- [ ] I have followed the contributing instructions in the README
+- [ ] I have verified that my changes render correctly (if applicable)
 
-### 📚 Documentation Requirements
+## Questions or Comments
 
-Does this PR require documentation?
-
-- [ ] Yes → If yes, complete the steps below
-  - [ ] I have added the `needs-docs` label to this PR ✅
-- [ ] No → Documentation is not needed for this PR
-
-> ⚠️ Adding the `needs-docs` label allows GitHub Actions to auto-trigger downstream processes like ticket creation or docs assignment. Please ensure the label is applied if applicable.
-
-### 🔗 Related Issues/Tickets
-
-<!-- Link any Jira/GitHub/Asana/Linear tickets here -->
-
-### 👥 Reviewers
-
-<!-- Mention team members for review -->
-@Reviewer1 @Reviewer2
+Let us know if you need help or want feedback on anything.
