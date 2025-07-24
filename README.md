@@ -11,7 +11,7 @@ The **WTH Docs Lab** repository is created to serve two key purposes:
 
 This repository is still in its early stages, and we are in the process of structuring it according to our planned information architecture. We will be integrating our portfolio samples, refining the layout, and ensuring it becomes a useful resource for both internal team members and external contributors.
 
-## 🔹 How to Use This Repository
+## How to Use This Repository
 1. **Explore the Onboarding Roadmap** → Follow structured learning paths.
 2. **Compare Documentation** → Learn from before-and-after examples.
 3. **Contribute & Improve** → Join discussions, review docs, and contribute.
@@ -20,7 +20,7 @@ This repository is still in its early stages, and we are in the process of struc
 
 This project is built using **Hugo** with the **Doks** theme, a powerful static site generator designed for documentation.
 
-### 📌 **Resources**
+### Resources
 
 - **Hugo Documentation:** [https://gohugo.io/documentation/](https://gohugo.io/documentation/)
 - **Doks Theme Documentation:** [https://getdoks.org/docs/start-here/getting-started/](https://getdoks.org/docs/start-here/getting-started/)
