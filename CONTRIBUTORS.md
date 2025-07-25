@@ -38,5 +38,9 @@ We’re excited to have you as part of this community! 🚀
 
 <!-- New contributors, add your details below this line -->
 
-
 <!-- End of contributor entries -->
+
+- Anukam Chidalu – [@daluclemas](https://github.com/daluclemas)
+  _Interested in: e.g., Documentation, Frontend, Fullstack_
+  _Location: Nigeria_
+  _Fun fact or why you're interested in open source: Because I can drive impact through open source._
