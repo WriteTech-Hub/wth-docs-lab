@@ -1,6 +1,11 @@
 # Welcome to WTH Docs Lab! 🚀
 
-This repository is designed to help technical writers improve documentation skills, compare different styles of documentation, and onboard into WriteTech Hub.
+This repository is a hands-on space for technical writers to improve their documentation skills, explore real-world examples, and contribute to WriteTech Hub’s documentation ecosystem. Whether you're building a portfolio or learning best practices, you're welcome here.
+
+## Quick Links
+
+- 📘 [Contribution Guidelines](./CONTRIBUTING.md)
+- 👥 [Contributor List](./CONTRIBUTORS.md)
 
 ## Introduction
 
@@ -14,7 +19,12 @@ This repository is still in its early stages, and we are in the process of struc
 ## How to Use This Repository
 1. **Explore the Onboarding Roadmap** → Follow structured learning paths.
 2. **Compare Documentation** → Learn from before-and-after examples.
-3. **Contribute & Improve** → Join discussions, review docs, and contribute.
+3. **Contribute** – Improve docs, suggest edits, or add yourself to the [contributor list](./CONTRIBUTORS.md).
+
+<!--
+1. **Get Started** – Follow the [onboarding roadmap](./content/guide/roadmap.md) to begin your learning journey.
+2. **Learn by Example** – Explore real documentation before-and-after comparisons in the `/docs` section.
+-->
 
 ## Technology Stack
 
@@ -47,6 +57,7 @@ We are in the process of adapting the Doks theme to fit our needs. Once complete
  ┣ ...
  ┣ 📜 README.md  # Repository overview
  ┣ 📜 CONTRIBUTING.md  # Contribution guidelines
+ ┣ 📜 CONTRIBUTOR.md  # List of Contributors
  ┣ 📜 CODE_OF_CONDUCT.md  # Community standards
  ┣ 📜 LICENSE.md  # Open-source license
 ```
@@ -130,5 +141,13 @@ As we finalize the repository structure, contributions should align with the fol
 * Review contribution guidelines and ensure all team members are aligned.
 * Generate static site and deploy site.
 
-For questions or issues, feel free to ask in the Tech Content group!
+## Join the Community
+
+Have questions or need support?
+
+* Ask in the `#opensource` channel of the [WriteTech Hub Slack community](https://writetechhub.org/our-community/).
+* Or [open an issue](https://github.com/WriteTech-Hub/wth-docs-lab/issues) on this repository.
+
+We’re excited to grow and learn together! ✨
+
 
