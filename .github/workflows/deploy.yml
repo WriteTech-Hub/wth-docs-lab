@@ -20,37 +20,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '18'
           cache: 'npm'
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.163.3'
           extended: true
-
       - name: Install dependencies
         run: npm ci
-
-      - name: Clear NODE_OPTIONS
-        run: echo "NODE_OPTIONS=--allow-fs-read=*" >> $GITHUB_ENV
-
       - name: Build
         run: npm run build
         env:
           HUGO_ENVIRONMENT: production
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-
   deploy:
     environment:
       name: github-pages
@@ -58,6 +42,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
