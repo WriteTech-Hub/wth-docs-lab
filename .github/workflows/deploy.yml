@@ -39,7 +39,7 @@ jobs:
         run: npm ci
 
       - name: Clear NODE_OPTIONS
-        run: echo "NODE_OPTIONS=" >> $GITHUB_ENV
+        run: echo "NODE_OPTIONS=--allow-fs-read=*" >> $GITHUB_ENV
 
       - name: Build
         run: npm run build
