@@ -38,6 +38,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Clear NODE_OPTIONS
+        run: unset NODE_OPTIONS || true
+
       - name: Build
         run: npm run build
         env:
