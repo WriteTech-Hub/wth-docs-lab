@@ -1,5 +1,5 @@
 title = "WTH Docs Lab"
-baseurl = "https://WriteTech-Hub.github.io/wth-docs-lab/"
+baseurl = "https://writetech-hub.github.io/wth-docs-lab/"
 canonifyURLs = false
 disableAliases = false
 disableHugoGeneratorInject = true
