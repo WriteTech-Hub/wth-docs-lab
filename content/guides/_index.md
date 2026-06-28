@@ -1,9 +1,10 @@
----
+﻿---
 title: "Technical Writing Resources"
-description: "A curated resource bank for technical writers at every level — beginner, intermediate, and advanced."
+description: "A curated resource bank for technical writers at every level beginner, intermediate, and advanced."
 summary: "Structured learning path with capstone deliverables for technical writers."
 date: 2026-06-14T20:51:00+01:00
 lastmod: 2026-06-14T20:51:00+01:00
+type: guides
 draft: false
 weight: 100
 toc: true
@@ -13,7 +14,6 @@ seo:
   canonical: ""
   robots: ""
 ---
-# Technical Writing Resources
 
 This repository is a curated resource bank for technical writers at every level. Whether you are just getting started, actively practising, or working on complex documentation projects, there is a starting point here for you.
 
@@ -23,9 +23,9 @@ Start at the level that matches where you are now. If you are unsure, begin with
 
 ## Levels
 
-- **[Beginner](beginner.md)**: Foundations
-- **[Intermediate](intermediate.md)**: Practice and Delivery
-- **[Advanced](advanced.md)**: Systems and Scale
+- **Beginner**: Foundations
+- **Intermediate**: Practice and Delivery
+- **Advanced**: Systems and Scale
 
 ## How the levels work
 

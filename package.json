@@ -6,8 +6,10 @@
   "license": "MIT",
   "scripts": {
     "create": "hugo new",
+    "predev": "copy /Y layouts\\index.html node_modules\\@thulite\\doks-core\\layouts\\index.html",
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
+    "prebuild": "copy /Y layouts\\index.html node_modules\\@thulite\\doks-core\\layouts\\index.html",
     "build": "hugo --minify --gc",
     "preview": "vite preview --outDir public"
   },

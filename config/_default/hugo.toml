@@ -1,5 +1,5 @@
 title = "WTH Docs Lab"
-baseurl = "http://localhost/"
+baseurl = "https://WriteTech-Hub.github.io/wth-docs-lab/"
 canonifyURLs = false
 disableAliases = false
 disableHugoGeneratorInject = true
@@ -47,7 +47,7 @@ copyRight = "Copyright (c) 2020-2024 Thulite"
   priority = 0.5
 
 [caches]
-  [caches.getjson]
+  [caches.getresource]
     dir = ":cacheDir/:project"
     maxAge = -1 # "30m"
 
