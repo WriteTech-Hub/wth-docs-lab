@@ -1,59 +1,154 @@
 {{ define "main" }}
-<section class="section container-fluid mt-n3 pb-3">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
-      <h1>{{ .Title }}</h1>
+<div class="wth-home">
+  <section class="wth-hero">
+    <div class="wth-container">
+      <div class="wth-hero__eyebrow">WriteTech Hub &middot; Resource Library</div>
+      <h1 class="wth-hero__title">Learn technical writing.<br>Level by level.</h1>
+      <p class="wth-hero__lead">A structured, practitioner-built resource library for technical writers &mdash; from your first how-to guide to owning documentation at programme scale.</p>
+      <div class="wth-hero__actions">
+        <a href="https://writetech-hub.github.io/wth-docs-lab/guides/" class="wth-btn wth-btn--primary">Start learning</a>
+        <a href="https://writetechhub.org/our-community/" class="wth-btn wth-btn--ghost" target="_blank" rel="noopener">Join the community &rarr;</a>
+      </div>
     </div>
-    <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>
-      {{ .Content }}
+  </section>
+  <section class="wth-levels">
+    <div class="wth-container">
+      <div class="wth-levels__header">
+        <h2>Three levels. One learning path.</h2>
+        <p>Start where you are. Each level closes with a capstone deliverable you can add to your portfolio.</p>
+      </div>
+      <div class="wth-levels__grid">
+        <a href="https://writetech-hub.github.io/wth-docs-lab/guides/beginner/" class="wth-level-card wth-level-card--beginner">
+          <div class="wth-level-card__tag">Beginner</div>
+          <h3 class="wth-level-card__title">Foundations</h3>
+          <p class="wth-level-card__desc">Clear writing, document types, style guides, working with SMEs, and responsible AI use. Build enough foundation to write something useful for a real reader.</p>
+          <ul class="wth-level-card__topics">
+            <li>Google Technical Writing courses</li>
+            <li>Diataxis framework</li>
+            <li>Style guides (Google, Microsoft)</li>
+            <li>Working with subject matter experts</li>
+            <li>Basic prompt engineering</li>
+          </ul>
+          <div class="wth-level-card__cta">Start here &rarr;</div>
+        </a>
+        <a href="https://writetech-hub.github.io/wth-docs-lab/guides/intermediate/" class="wth-level-card wth-level-card--intermediate">
+          <div class="wth-level-card__tag">Intermediate</div>
+          <h3 class="wth-level-card__title">Practice &amp; Delivery</h3>
+          <p class="wth-level-card__desc">Information architecture, docs-as-code, API documentation, and quality systems. Build portfolio-ready work used in active projects.</p>
+          <ul class="wth-level-card__topics">
+            <li>Information architecture</li>
+            <li>Docs-as-code with GitHub</li>
+            <li>API documentation</li>
+            <li>Vale prose linting</li>
+            <li>AI-assisted editing workflows</li>
+          </ul>
+          <div class="wth-level-card__cta">Level up &rarr;</div>
+        </a>
+        <a href="https://writetech-hub.github.io/wth-docs-lab/guides/advanced/" class="wth-level-card wth-level-card--advanced">
+          <div class="wth-level-card__tag">Advanced</div>
+          <h3 class="wth-level-card__title">Systems &amp; Scale</h3>
+          <p class="wth-level-card__desc">Content strategy, governance, measurement, cross-functional influence, and AI at programme level. Own documentation across an entire product.</p>
+          <ul class="wth-level-card__topics">
+            <li>Content strategy &amp; governance</li>
+            <li>Documentation metrics</li>
+            <li>Cross-functional influence</li>
+            <li>RAG &amp; agentic AI systems</li>
+            <li>CI/CD for documentation</li>
+          </ul>
+          <div class="wth-level-card__cta">Go deep &rarr;</div>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-{{ end }}
-
-{{ define "sidebar-prefooter" }}
-  {{ if site.Params.doks.backgroundDots -}}
-  <div class="d-flex justify-content-start">
-    <div class="bg-dots"></div>
-  </div>
-  {{ end -}}
-  {{ if eq $.Site.Language.LanguageName "English" }}
-  <section class="section section-md section-features">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Update content</h2>
-          <p>Edit <code>content/_index.md</code> to see this page change.</p>
+  </section>
+  <section class="wth-how">
+    <div class="wth-container">
+      <h2 class="wth-how__title">How the library works</h2>
+      <div class="wth-how__grid">
+        <div class="wth-how__item">
+          <div class="wth-how__num">1</div>
+          <div><h4>Pick your level</h4><p>Start at Beginner if you are new. Move up when you complete the capstone.</p></div>
         </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Add new content</h2>
-          <p>Add Markdown files to <code>content</code> to create new pages.</p>
+        <div class="wth-how__item">
+          <div class="wth-how__num">2</div>
+          <div><h4>Study and practise</h4><p>Read the resources, then do the exercises. The exercises are where learning happens.</p></div>
         </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Configure your site</h2>
-          <p>Edit your config in <code>config/_default/params.toml</code>.</p>
+        <div class="wth-how__item">
+          <div class="wth-how__num">3</div>
+          <div><h4>Build your capstone</h4><p>Each level ends with a deliverable. Build it and add it to your portfolio.</p></div>
         </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Read the docs</h2>
-          <p>Learn more in the <a href="https://getdoks.org/">Docs</a>.</p>
+        <div class="wth-how__item">
+          <div class="wth-how__num">4</div>
+          <div><h4>Share and grow</h4><p>Post your work in the WriteTech Hub community and get feedback.</p></div>
         </div>
       </div>
     </div>
   </section>
-  {{ end }}
-{{ end }}
-
-{{ define "sidebar-footer" }}
-{{ if site.Params.doks.sectionFooter -}}
-<section class="section section-md container-fluid bg-light">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-7">
-      <h2 class="mt-2">Start building with Doks today</h2>
-      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+  <section class="wth-community">
+    <div class="wth-container">
+      <div class="wth-community__inner">
+        <h2>Technical writing is easier when you are not doing it alone.</h2>
+        <p>Join the WriteTech Hub community to share your work, get feedback, and connect with writers at every level.</p>
+        <div class="wth-hero__actions">
+          <a href="https://writetechhub.org/our-community/" class="wth-btn wth-btn--primary" target="_blank" rel="noopener">Join the community</a>
+          <a href="https://writetech-hub.github.io/wth-docs-lab/guides/" class="wth-btn wth-btn--ghost">Start learning &rarr;</a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-{{ end -}}
+  </section>
+</div>
+<style>
+:root{--wth-purple:#7C3AED;--wth-purple-light:#EDE9FE;--wth-purple-dark:#5B21B6;--wth-ink:#111827;--wth-muted:#6B7280;--wth-border:#E5E7EB;--wth-surface:#F9FAFB;--wth-white:#ffffff;--wth-green:#059669;--wth-blue:#2563EB;--wth-radius:12px}
+.wth-home{font-family:'Inter','Jost',system-ui,sans-serif;color:var(--wth-ink)}
+.wth-container{max-width:1100px;margin:0 auto;padding:0 2rem}
+.wth-hero{padding:5rem 0 4rem;border-bottom:1px solid var(--wth-border)}
+.wth-hero__eyebrow{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--wth-purple);background:var(--wth-purple-light);padding:.3rem .85rem;border-radius:100px;margin-bottom:1.5rem}
+.wth-hero__title{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;color:var(--wth-ink);margin:0 0 1.25rem}
+.wth-hero__lead{font-size:1.15rem;color:var(--wth-muted);line-height:1.7;max-width:620px;margin:0 0 2rem}
+.wth-hero__actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.wth-btn{display:inline-flex;align-items:center;padding:.75rem 1.5rem;border-radius:8px;font-size:.95rem;font-weight:600;text-decoration:none;transition:all .15s ease}
+.wth-btn--primary{background:var(--wth-purple);color:var(--wth-white);border:2px solid var(--wth-purple)}
+.wth-btn--primary:hover{background:var(--wth-purple-dark);border-color:var(--wth-purple-dark);color:var(--wth-white);text-decoration:none}
+.wth-btn--ghost{color:var(--wth-ink);border:2px solid var(--wth-border);background:transparent}
+.wth-btn--ghost:hover{border-color:var(--wth-ink);color:var(--wth-ink);text-decoration:none}
+.wth-levels{padding:5rem 0}
+.wth-levels__header{text-align:center;margin-bottom:3rem}
+.wth-levels__header h2{font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.75rem}
+.wth-levels__header p{color:var(--wth-muted);font-size:1.05rem;max-width:500px;margin:0 auto}
+.wth-levels__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.wth-level-card{display:flex;flex-direction:column;padding:2rem;border-radius:var(--wth-radius);border:1.5px solid var(--wth-border);text-decoration:none;color:var(--wth-ink);background:var(--wth-white);transition:all .2s ease}
+.wth-level-card:hover{border-color:var(--wth-purple);box-shadow:0 8px 30px rgba(124,58,237,.1);transform:translateY(-2px);text-decoration:none;color:var(--wth-ink)}
+.wth-level-card *{text-decoration:none}
+.wth-level-card p,.wth-level-card li,.wth-level-card h3{color:inherit}
+.wth-level-card--beginner{border-top:4px solid var(--wth-green)}
+.wth-level-card--intermediate{border-top:4px solid var(--wth-purple)}
+.wth-level-card--advanced{border-top:4px solid var(--wth-blue)}
+.wth-level-card__tag{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem}
+.wth-level-card--beginner .wth-level-card__tag{color:var(--wth-green)}
+.wth-level-card--intermediate .wth-level-card__tag{color:var(--wth-purple)}
+.wth-level-card--advanced .wth-level-card__tag{color:var(--wth-blue)}
+.wth-level-card__title{font-size:1.4rem;font-weight:800;margin:0 0 .75rem}
+.wth-level-card__desc{font-size:.9rem;color:var(--wth-muted);line-height:1.65;margin-bottom:1.25rem}
+.wth-level-card__topics{list-style:none;padding:0;margin:0 0 1.5rem;flex:1}
+.wth-level-card__topics li{font-size:.85rem;padding:.35rem 0;border-bottom:1px solid var(--wth-border);display:flex;align-items:center;gap:.5rem}
+.wth-level-card__topics li::before{content:'-';color:var(--wth-muted);flex-shrink:0}
+.wth-level-card__cta{font-size:.875rem;font-weight:700;margin-top:auto}
+.wth-level-card--beginner .wth-level-card__cta{color:var(--wth-green)}
+.wth-level-card--intermediate .wth-level-card__cta{color:var(--wth-purple)}
+.wth-level-card--advanced .wth-level-card__cta{color:var(--wth-blue)}
+.wth-how{padding:5rem 0;background:var(--wth-surface);border-top:1px solid var(--wth-border);border-bottom:1px solid var(--wth-border)}
+.wth-how__title{text-align:center;font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:3rem}
+.wth-how__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
+.wth-how__item{display:flex;gap:1rem;align-items:flex-start}
+.wth-how__num{width:2rem;height:2rem;border-radius:50%;background:var(--wth-purple);color:var(--wth-white);font-size:.8rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.wth-how__item h4{font-size:.95rem;font-weight:700;margin:0 0 .4rem}
+.wth-how__item p{font-size:.875rem;color:var(--wth-muted);line-height:1.65;margin:0}
+.wth-community{padding:5rem 0}
+.wth-community__inner{text-align:center;max-width:600px;margin:0 auto}
+.wth-community__inner h2{font-size:1.75rem;font-weight:800;letter-spacing:-.02em;margin-bottom:1rem}
+.wth-community__inner p{color:var(--wth-muted);font-size:1rem;line-height:1.7;margin-bottom:2rem}
+.wth-community .wth-hero__actions{justify-content:center}
+@media(max-width:640px){.wth-hero{padding:3rem 0}.wth-levels,.wth-how,.wth-community{padding:3rem 0}.wth-levels__grid{grid-template-columns:1fr}}
+</style>
 {{ end }}
+{{ define "sidebar-prefooter" }}{{ end }}
+{{ define "sidebar-footer" }}{{ end }}
