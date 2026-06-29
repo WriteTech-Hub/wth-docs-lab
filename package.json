@@ -6,10 +6,10 @@
   "license": "MIT",
   "scripts": {
     "create": "hugo new",
-    "predev": "cp layouts/index.html node_modules/@thulite/doks-core/layouts/index.html || copy /Y layouts\\index.html node_modules\\@thulite\\doks-core\\layouts\\index.html",
+    "predev": "cp layouts/index.html node_modules/@thulite/doks-core/layouts/index.html; cp layouts/index.html node_modules/@thulite/core/layouts/index.html || copy /Y layouts\\index.html node_modules\\@thulite\\doks-core\\layouts\\index.html",
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
-    "prebuild": "cp layouts/index.html node_modules/@thulite/doks-core/layouts/index.html || copy /Y layouts\\index.html node_modules\\@thulite\\doks-core\\layouts\\index.html",
+    "prebuild": "cp layouts/index.html node_modules/@thulite/doks-core/layouts/index.html; cp layouts/index.html node_modules/@thulite/core/layouts/index.html || true",
     "build": "hugo --minify --gc",
     "preview": "vite preview --outDir public"
   },

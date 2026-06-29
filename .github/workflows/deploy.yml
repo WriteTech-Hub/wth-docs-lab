@@ -38,6 +38,13 @@ jobs:
         run: hugo --minify --gc --baseURL "https://writetech-hub.github.io/wth-docs-lab-fork/"
         env:
           HUGO_ENVIRONMENT: production
+      - name: Check public folder
+        run: ls -la public/ | head -20
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
   deploy:
     environment:
       name: github-pages
