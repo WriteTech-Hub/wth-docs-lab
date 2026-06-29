@@ -31,8 +31,11 @@ jobs:
           extended: true
       - name: Install dependencies
         run: npm ci
+      - name: Copy layout override
+        run: cp layouts/index.html node_modules/@thulite/doks-core/layouts/index.html; cp layouts/index.html node_modules/@thulite/core/layouts/index.html || true
+
       - name: Build
-        run: npm run build
+        run: hugo --minify --gc --baseURL "https://writetech-hub.github.io/wth-docs-lab-fork/"
         env:
           HUGO_ENVIRONMENT: production
   deploy:
