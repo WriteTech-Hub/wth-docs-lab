@@ -35,7 +35,7 @@ jobs:
         run: cp layouts/index.html node_modules/@thulite/doks-core/layouts/index.html; cp layouts/index.html node_modules/@thulite/core/layouts/index.html || true
 
       - name: Build
-        run: hugo --minify --gc --baseURL "https://writetech-hub.github.io/wth-docs-lab-fork/"
+        run: hugo --minify --gc --baseURL "https://writetech-hub.github.io/wth-docs-lab/"
         env:
           HUGO_ENVIRONMENT: production
       - name: Check public folder
