@@ -194,7 +194,7 @@ At the advanced level, AI is not a writing assistant. It is a strategic capabili
 
 #### 1. Agentic AI and multi-step workflows
 
-Design AI systems that can complete complex documentation tasks through reasoning and action loops. This includes ReAct (Reason + Act) patterns, where AI systems iterate through thought â†’ action â†’ observation to complete tasks grounded in real systems.
+Design AI systems that can complete complex documentation tasks through reasoning and action loops. This includes ReAct (Reason + Act) patterns, where AI systems iterate through thought, action, and observation to complete tasks grounded in real systems.
 
 For example, design an agent that:
 
