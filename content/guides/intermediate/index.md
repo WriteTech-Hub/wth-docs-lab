@@ -3,7 +3,7 @@ title: "Intermediate Resources"
 description: "Intermediate technical writing resources covering information architecture, docs-as-code, API documentation, quality systems, and AI-assisted workflows."
 summary: "Develop reliable skills in information architecture, docs-as-code, API documentation, quality systems, and responsible AI use for technical writers."
 date: 2026-06-14T20:52:00+01:00
-lastmod: 2026-06-14T20:52:00+01:00
+lastmod: 2026-09-21T12:00:00+01:00
 type: guides
 draft: false
 weight: 300
@@ -42,7 +42,7 @@ At this level, learn to think about your documentation at the structural level b
 - [Unlock the Power of Content Reuse in Technical Documentation](https://www.madcapsoftware.com/products/flare/single-sourcing.aspx) explores strategies for reusing content effectively while keeping documentation accurate, maintainable, and scalable.
 - [Information Architecture for Technical Writing](https://paligo.net/blog/information-architecture/information-architecture-101-for-technical-writers/) covers documentation hierarchy, navigation, content organization, labeling, and findability from a technical writing perspective.
 - [The Difference Between Information Architecture and Navigation](https://www.uxdt.nic.in/guidelines/ux-design-guidelines/navigation-and-information-architecture/) is a foundational article that helps you think about structure and navigation as separate but related concerns.
-- [What Information Architecture Is and How I Use It to Improve User Experience](https://mockflow.com/blog/information-architecture-a-beginners-guide) explains information architecture from the perspective of a practicing technical writer and connects it to documentation outcomes.
+- [Information Architecture: A Beginner's Guide](https://mockflow.com/blog/information-architecture-a-beginners-guide) introduces the basics of information architecture and how structure and navigation shape the user experience.
 
 ### Practice
 
@@ -79,7 +79,7 @@ Docs-as-code means managing documentation with the same tools and workflows used
 
 [Write the Docs: Docs as Code](https://www.writethedocs.org/guide/docs-as-code/) is the community's primary reference for this workflow. Start there.
 
-[A Technical Writer's Introduction to Docs as Code](https://www.writethedocs.org/guide/docs-as-code/) is a practical walkthrough covering the four components of a docs-as-code setup: version control, static site generator, CI/CD pipeline, and hosting.
+[A Technical Writer's Introduction to Docs as Code](https://www.everythingtechnicalwriting.com/dosc-as-code/) is a practical walkthrough covering the four components of a docs-as-code setup: version control, static site generator, CI/CD pipeline, and hosting.
 
 ### Video tutorials
 
@@ -214,7 +214,7 @@ It can run locally as you write and also in CI pipelines like GitHub Actions, en
 
 - [Vale documentation](https://vale.sh/docs/) covers installation, configuration, and writing custom rules.
 - [Prose Linting with Vale (Meilisearch)](https://blog.meilisearch.com/prose-linting-with-vale/) is a practical walkthrough of setting Vale up for a real documentation project, from defining a style to running checks in CI.
-- [How Datadog Uses Vale](https://www.datadoghq.com/blog/engineering/how-we-use-vale-at-datadog/) shows how a large documentation team uses Vale in production, including their approach to custom rules.
+- [How we use Vale to improve our documentation editing process (Datadog)](https://www.datadoghq.com/blog/engineering/how-we-use-vale-to-improve-our-documentation-editing-process/) shows how a large documentation team uses Vale in production, including their approach to custom rules.
 
 ### Practice
 
@@ -304,7 +304,6 @@ Specific risks at this level:
 ### Resources
 
 - [AI in Technical Writing: Complete Guide for 2026 (INSTRKTIV)](https://instrktiv.com/en/ai-in-technical-writing/) covers workflows, effective prompting, data handling, and quality control in AI-assisted documentation. Includes reusable prompts for user manuals, API endpoints, consistency checks, and troubleshooting.
-- [AI in Technical Writing: A Complete Guide for 2026](https://www.adoc-studio.app/blog/technical-writing-guide) covers workflows, effective prompting, data handling, and quality control in AI-assisted documentation.
 - [Week 4, Session 2: Using AI Tools in Your Documentation Workflow](https://www.youtube.com/watch?v=IoOtk7Ad3X8&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=8) from the WriteTech Accelerator Program covers this in a practical, applied format.
 - [Week 3, Session 4: Documentation Workflows and AI Integration](https://www.youtube.com/watch?v=iqcjz8WMriE&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=11) covers how AI fits into broader documentation workflows.
 
@@ -371,7 +370,7 @@ You do not need to master all of these before moving to the next level. Get fami
 
 ### Visual tools
 
-[Miro](https://miro.com/), [Lucidchart](https://www.lucidchart.com/pages), [Adobe](https://www.adobe.com/ng/creativecloud/illustration.html), [Canva](https://www.canva.com/), [draw.io](http://draw.io), or similar for diagrams and illustrations when you cannot get them from the engineering team.
+[Miro](https://miro.com/), [Lucidchart](https://www.lucidchart.com/pages), [Adobe](https://www.adobe.com/ng/creativecloud/illustration.html), [Canva](https://www.canva.com/), [draw.io](https://www.drawio.com/), or similar for diagrams and illustrations when you cannot get them from the engineering team.
 
 Follow the [WriteTech Tool Review Series](https://writetechhub.org) for coverage of new and updated tools as they become relevant.
 

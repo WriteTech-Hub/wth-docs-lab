@@ -19,7 +19,7 @@ This repository is a curated resource bank for technical writers at every level.
 
 The resources are organised into three levels: **Beginner**, **Intermediate**, and **Advanced**. Each level follows the same structure: you learn a concept, study the relevant resources, practise applying it, and work toward a concrete deliverable you can add to your portfolio.
 
-Start at the level that matches where you are now. If you are unsure, begin with [Beginner](beginner.md).
+Start at the level that matches where you are now. If you are unsure, begin with [Beginner](beginner/).
 
 ## Levels
 

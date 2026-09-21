@@ -3,7 +3,7 @@ title: "Beginner Resources"
 description: "Foundational technical writing resources for beginners covering clear writing, document types, style guides, and working with subject matter experts."
 summary: "Learn the fundamentals of technical writing: clear communication, Diataxis framework, style guides, SME collaboration, and responsible AI use."
 date: 2026-06-14T20:51:00+01:00
-lastmod: 2026-06-14T20:51:00+01:00
+lastmod: 2026-09-21T12:00:00+01:00
 type: guides
 draft: false
 weight: 200
@@ -52,9 +52,7 @@ Before you move further, get comfortable with these ideas:
 
 2. **[Getting Started in Technical Writing](https://github.com/Bennykillua/Getting-started-in-Technical-Writing)** (e-book) is a practical introduction to the field written for people starting from scratch. It explains what technical writers actually do and how to approach your first documentation project.
 
-3. **[Getting Started in Technical Writing: A Beginner's Guide](https://github.com/Bennykillua/Getting-started-in-Technical-Writing)** covers audience considerations and structured writing in a format you can work through at your own pace.
-
-4. **[TechnicalWritingMP](https://technicalwritingmp.com/)** has beginner-level courses on documentation fundamentals, basic API concepts, and markup languages.
+3. **[TechnicalWritingMP](https://technicalwritingmp.com/)** has beginner-level courses on documentation fundamentals, basic API concepts, and markup languages.
 
 ### Watch
 
@@ -264,9 +262,7 @@ These are supplementary articles for when you want more context on the field. Re
 - [Hackmamba Technical Writing Hub](https://hackmamba.io/)
 - [Writerstable.in](https://writerstable.in/)
 - [Introduction to Technical Writing](https://www.coursera.org/learn/technical-writing-introduction)
-- [Technical Writing 101: Definition, Examples, and How to Become One](https://www.indeed.com/career-advice/careers/what-is-technical-writing)
 - [What Is Technical Writing? Definition, Examples and Steps](https://www.indeed.com/career-advice/careers/what-is-technical-writing)
-- [What Is Technical Writing: An All-inclusive Guide](https://www.geeksforgeeks.org/technical-writing/)
 
 ## Ask the community
 

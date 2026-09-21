@@ -33,15 +33,17 @@
   url = "/guides/"
   weight = 10
 
-[[main]]
-  name = "Docs"
-  url = "/docs/"
-  weight = 10
+# Hidden from the main menu: template placeholder content. Uncomment to restore.
+# [[main]]
+#   name = "Docs"
+#   url = "/docs/"
+#   weight = 10
 
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 30
+# Hidden from the main menu: template placeholder content. Uncomment to restore.
+# [[main]]
+#   name = "Blog"
+#   url = "/blog/"
+#   weight = 30
 
 [[main]]
   name = "Services"
