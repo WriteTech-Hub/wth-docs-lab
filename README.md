@@ -125,6 +125,14 @@ npm run build
 
 The static files will be generated in the `public/` directory.
 
+### Deployment
+
+The live site at <https://writetech-hub.github.io/wth-docs-lab/> is deployed from the `roadmap-site` branch, not `main`. Pushing to `roadmap-site` runs the [Deploy to GitHub Pages](./.github/workflows/deploy.yml) workflow, which builds the site with Hugo and publishes it.
+
+- To update the live site, make your changes on the `roadmap-site` branch (or open a pull request into it).
+- Pushes to `main` do not trigger a deployment.
+- Check the **Actions** tab to confirm that a deployment succeeded.
+
 ## Contribution Guidelines
 
 As we finalize the repository structure, contributions should align with the following:
