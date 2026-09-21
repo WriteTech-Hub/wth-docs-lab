@@ -1,21 +1,24 @@
 {{ define "main" }}
 <div class="row justify-content-center">
   <div class="col-md-12 col-lg-10 col-xl-8">
-    <article>
+    <article class="wth-page">
       <h1>{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
       {{ with .Content }}<div>{{ . }}</div>{{ end }}
       <div class="card-list">
         {{ $currentSection := .CurrentSection }}
-        {{ range where .Site.RegularPages.ByTitle "Section" .Section }}
+        {{ range where .Site.RegularPages.ByWeight "Section" .Section }}
           {{ if in (.RelPermalink | string) $currentSection.RelPermalink }}
             <div class="card my-3">
               <div class="card-body">
                 <a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title | title }} &rarr;</a>
+                {{ with .Params.summary }}<p class="card-summary">{{ . }}</p>{{ end }}
               </div>
             </div>
           {{ end }}
         {{ end }}
       </div>
+
+      <p class="wth-dash__link-card"><a href="{{ "progress/" | relURL }}">See your progress, and back it up or clear it &rarr;</a></p>
     </article>
   </div>
 </div>

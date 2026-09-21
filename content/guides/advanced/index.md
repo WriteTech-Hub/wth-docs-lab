@@ -137,7 +137,9 @@ This shifts documentation work from being reactive to proactive, as you influenc
 
 ### Watch
 
-- [DevOps and Technical Writing](https://www.youtube.com/watch?v=dseRmGeYbec) (1:11:39)
+{{< watchlist >}}
+{{< watch id="dseRmGeYbec" title="DevOps and Technical Writing" time="1:11:39" >}}
+{{< /watchlist >}}
 
 ## 4. Information architecture at scale
 
@@ -275,11 +277,6 @@ Design an AI-assisted documentation system for a hypothetical product. Your deli
 - [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework): The US National Institute of Standards and Technology framework for managing AI risks, including governance, measurement, and mitigation. Essential for designing responsible AI systems in documentation.
 - [Responsible AI Practices](https://ai.google/responsibility/responsible-ai-practices/): Google's operational guidance on building AI systems responsibly, including fairness, transparency, accountability, and privacy. Useful for establishing team-level AI ethics standards.
 
-### Watch
-
-- [Week 3, Session 4: Documentation Workflows and AI Integration](https://www.youtube.com/watch?v=iqcjz8WMriE) (1:13:29)
-- [Week 4, Session 2: Using AI Tools in Your Documentation Workflow](https://www.youtube.com/watch?v=IoOtk7Ad3X8) (1:04:55)
-
 ## 6. Tooling and automation
 
 At the advanced level, tooling is not about knowing which tools exist. It is about building systems that maintain documentation quality at scale without requiring constant manual oversight. The goal is leverage, meaning the ability to maintain a high-quality documentation programme without headcount growing in proportion to content volume.
@@ -342,10 +339,12 @@ At this level, your job is to decide what should be automated and what must rema
 
 ### Watch
 
-- [Week 3, Session 1: Introduction to CI/CD for Technical Writers](https://www.youtube.com/watch?v=mj4HD7NTB4o) (1:40:53)
-- [Week 3, Session 2: Introduction to Automated Linters](https://www.youtube.com/watch?v=VyZoL8KiE7k) (1:56:07)
-- [Week 3, Session 3: Automated Linters for API Documentation](https://www.youtube.com/watch?v=cp6I3zTeshg) (1:49:20)
-- [Week 5, Session 1: Docs in the DevOps Ecosystem](https://www.youtube.com/watch?v=fi5PV5Aynoo) (1:46:50)
+{{< watchlist >}}
+{{< watch id="mj4HD7NTB4o" title="Week 3, Session 1: Introduction to CI/CD for Technical Writers" time="1:40:53" >}}
+{{< watch id="VyZoL8KiE7k" title="Week 3, Session 2: Introduction to Automated Linters" time="1:56:07" >}}
+{{< watch id="cp6I3zTeshg" title="Week 3, Session 3: Automated Linters for API Documentation" time="1:49:20" >}}
+{{< watch id="fi5PV5Aynoo" title="Week 5, Session 1: Docs in the DevOps Ecosystem" time="1:46:50" >}}
+{{< /watchlist >}}
 
 ## 7. Documentation specialisations
 
@@ -363,10 +362,12 @@ Advanced writers often develop depth in one or two areas while maintaining broad
 
 ### Watch
 
-- [Week 4, Session 1: Documenting AI/ML Systems](https://www.youtube.com/watch?v=uzUsSSI6KiQ) (1:07:52)
-- [Week 5, Session 2: Infrastructure Docs and YAML/Terraform Annotations](https://www.youtube.com/watch?v=kUvaU6do5mg) (2:01:51)
-- [Week 5, Session 3: Getting Started with Terraform for Technical Writers](https://www.youtube.com/watch?v=aislzj1U99o) (1:38:23)
-- [Week 7, Session 2: Web3 Docs in Practice](https://www.youtube.com/watch?v=ECjDnSECsAw) (1:17:40)
+{{< watchlist >}}
+{{< watch id="uzUsSSI6KiQ" title="Week 4, Session 1: Documenting AI/ML Systems" time="1:07:52" >}}
+{{< watch id="kUvaU6do5mg" title="Week 5, Session 2: Infrastructure Docs and YAML/Terraform Annotations" time="2:01:51" >}}
+{{< watch id="aislzj1U99o" title="Week 5, Session 3: Getting Started with Terraform for Technical Writers" time="1:38:23" >}}
+{{< watch id="ECjDnSECsAw" title="Week 7, Session 2: Web3 Docs in Practice" time="1:17:40" >}}
+{{< /watchlist >}}
 
 ## 8. Video tutorials (WriteTech Hub)
 
@@ -377,16 +378,14 @@ The sessions linked in the sections above are from the WriteTech Accelerator Pro
 | 1 | [Week 3, Session 1: Introduction to CI/CD for Technical Writers](https://www.youtube.com/watch?v=mj4HD7NTB4o) | 1:40:53 |
 | 2 | [Week 3, Session 2: Introduction to Automated Linters](https://www.youtube.com/watch?v=VyZoL8KiE7k) | 1:56:07 |
 | 3 | [Week 3, Session 3: Automated Linters for API Documentation](https://www.youtube.com/watch?v=cp6I3zTeshg) | 1:49:20 |
-| 4 | [Week 3, Session 4: Documentation Workflows and AI Integration](https://www.youtube.com/watch?v=iqcjz8WMriE) | 1:13:29 |
-| 5 | [Week 4, Session 1: Documenting AI/ML Systems](https://www.youtube.com/watch?v=uzUsSSI6KiQ) | 1:07:52 |
-| 6 | [Week 4, Session 2: Using AI Tools in Your Documentation Workflow](https://www.youtube.com/watch?v=IoOtk7Ad3X8) | 1:04:55 |
-| 7 | [Week 5: Ask Me Anything and Feedback, Weeks 1 to 4](https://www.youtube.com/watch?v=2o1f8rNLqos) | 2:01:37 |
-| 8 | [Week 5, Session 1: Docs in the DevOps Ecosystem](https://www.youtube.com/watch?v=fi5PV5Aynoo) | 1:46:50 |
-| 9 | [Week 5, Session 2: Infrastructure Docs and YAML/Terraform Annotations](https://www.youtube.com/watch?v=kUvaU6do5mg) | 2:01:51 |
-| 10 | [Week 5, Session 3: Getting Started with Terraform for Technical Writers](https://www.youtube.com/watch?v=aislzj1U99o) | 1:38:23 |
-| 11 | [Week 6, Session 1: Open Source DevOps Docs Audit](https://www.youtube.com/watch?v=Tb_gfKItbV8) | 1:25:34 |
-| 12 | [Week 7, Session 2: Web3 Docs in Practice](https://www.youtube.com/watch?v=ECjDnSECsAw) | 1:17:40 |
-| 13 | [DevOps and Technical Writing](https://www.youtube.com/watch?v=dseRmGeYbec) | 1:11:39 |
+| 4 | [Week 4, Session 1: Documenting AI/ML Systems](https://www.youtube.com/watch?v=uzUsSSI6KiQ) | 1:07:52 |
+| 5 | [Week 5: Ask Me Anything and Feedback, Weeks 1 to 4](https://www.youtube.com/watch?v=2o1f8rNLqos) | 2:01:37 |
+| 6 | [Week 5, Session 1: Docs in the DevOps Ecosystem](https://www.youtube.com/watch?v=fi5PV5Aynoo) | 1:46:50 |
+| 7 | [Week 5, Session 2: Infrastructure Docs and YAML/Terraform Annotations](https://www.youtube.com/watch?v=kUvaU6do5mg) | 2:01:51 |
+| 8 | [Week 5, Session 3: Getting Started with Terraform for Technical Writers](https://www.youtube.com/watch?v=aislzj1U99o) | 1:38:23 |
+| 9 | [Week 6, Session 1: Open Source DevOps Docs Audit](https://www.youtube.com/watch?v=Tb_gfKItbV8) | 1:25:34 |
+| 10 | [Week 7, Session 2: Web3 Docs in Practice](https://www.youtube.com/watch?v=ECjDnSECsAw) | 1:17:40 |
+| 11 | [DevOps and Technical Writing](https://www.youtube.com/watch?v=dseRmGeYbec) | 1:11:39 |
 
 ## 9. Ownership and community contribution
 
@@ -454,7 +453,9 @@ At this stage, speaking at documentation, developer, or technical writing events
 
 ### Watch
 
-- [Week 6, Session 1: Open Source DevOps Docs Audit](https://www.youtube.com/watch?v=Tb_gfKItbV8) (1:25:34)
+{{< watchlist >}}
+{{< watch id="Tb_gfKItbV8" title="Week 6, Session 1: Open Source DevOps Docs Audit" time="1:25:34" >}}
+{{< /watchlist >}}
 
 ## 10. Career paths and staying current
 
@@ -468,6 +469,7 @@ Senior technical writers move into a range of roles as they develop. Common dire
 
 [WriteTech Newsletter](https://writetechhub.org) covers technical writing job opportunities, community updates, and industry developments. It is particularly useful if you are actively looking for roles or tracking how the field is changing.
 
+{{% capstone %}}
 ## Capstone deliverable: Docs Programme Pack
 
 The capstone for this level is not a single document. It is a documentation programme proposal built from an existing system, similar to what a technical writer would do when joining a team, auditing existing documentation, or being asked to improve a live system.
@@ -521,3 +523,4 @@ Your information architecture should include a visual or structured sitemap. Thi
 You are encouraged to use a docs-as-code workflow for this project. This means your work should include versioned commits, and optionally pull requests if you want to simulate a real team environment. You should also include a basic `CONTRIBUTING.md` if you are treating the repository as a maintained documentation project.
 
 Finally, your submission should be shared for feedback. You should post it in the [WriteTech Hub community](https://writetechhub.org/our-community/) and, where possible, request a review from another writer or mentor.
+{{% /capstone %}}

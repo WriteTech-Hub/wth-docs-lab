@@ -1,0 +1,32 @@
+{{- /* Guide pages are indexed per H2 section; other pages as in the Doks template. */ -}}
+{{- $pages := where site.Pages "Params.exclude_search" "!=" true -}}
+{{- if gt (len site.Params.doks.searchExclKinds) 0 }}{{- $pages = where $pages "Kind" "not in" site.Params.doks.searchExclKinds }}{{ end -}}
+{{- if gt (len site.Params.doks.searchExclKinds) 0 }}{{- $pages = where $pages "Type" "not in" site.Params.doks.searchExclTypes }}{{ end -}}
+{{- $dateFormat := site.Params.searchDateFormat | default "2006-01-02" -}}
+{{- $entries := slice -}}
+{{- $n := 0 -}}
+{{- range $pages -}}
+  {{- $page := . -}}
+  {{- $isGuide := and (eq $page.Section "guides") $page.IsPage -}}
+  {{- if $isGuide -}}
+    {{- $summary := $page.Params.summary | default $page.Summary -}}
+    {{- $entries = $entries | append (dict "id" $n "title" $page.Title "permalink" $page.RelPermalink "tags" ($page.Params.tags | default slice) "content" (printf "%s %s" $page.Title $summary) "summary" $summary "date" "") -}}
+    {{- $n = add $n 1 -}}
+    {{- $html := string $page.Content -}}
+    {{- range $i, $chunk := split $html "<h2 " -}}
+      {{- if gt $i 0 -}}
+        {{- $anchor := $chunk | replaceRE `(?s)^[^>]*?id="([^"]+)".*$` "$1" -}}
+        {{- $heading := $chunk | replaceRE `(?s)^[^>]*>(.*?)</h2>.*$` "$1" | plainify -}}
+        {{- $text := $chunk | replaceRE `(?s)^.*?</h2>` "" | plainify | replaceRE `\s+` " " | strings.TrimSpace -}}
+        {{- if and (lt (len $anchor) 120) (gt (len $text) 0) -}}
+          {{- $entries = $entries | append (dict "id" $n "title" (printf "%s › %s" $page.Title $heading) "permalink" (printf "%s#%s" $page.RelPermalink $anchor) "tags" slice "content" $text "summary" (string $text | truncate 220) "date" "") -}}
+          {{- $n = add $n 1 -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $entries = $entries | append (dict "id" $n "title" $page.Title "permalink" $page.RelPermalink "tags" ($page.Params.tags | default slice) "content" $page.Plain "summary" $page.Summary "date" (time.Format $dateFormat $page.Date)) -}}
+    {{- $n = add $n 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- $entries | jsonify -}}

@@ -32,6 +32,7 @@ module.exports = {
                 'type'
             ],
             safelist: [
+                /^wth-/, // site classes, including ones added by assets/js/custom.js
                 'active',
                 'btn-clipboard', // clipboards.js
                 'clipboard', // clipboards.js

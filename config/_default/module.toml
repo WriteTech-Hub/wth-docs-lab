@@ -25,6 +25,7 @@
   source = "node_modules/@tabler/icons/icons"
   target = "assets/svgs/tabler-icons"
 
+# Project last: for assets, the project overrides the theme (unlike layouts, where the first mount wins)
 [[mounts]]
   source = "assets"
   target = "assets"
@@ -53,16 +54,11 @@
   target = "i18n"
 
 ## layouts
+# Earlier mounts take priority in Hugo. The project comes first so layouts/ can override the
+# theme, then Doks (which must beat the generic core theme: its head partial loads the
+# light/dark colour-mode script and its baseof renders the header and footer), then the rest.
 [[mounts]]
-  source = "node_modules/@thulite/core/layouts"
-  target = "layouts"
-
-[[mounts]]
-  source = "node_modules/@thulite/seo/layouts"
-  target = "layouts"
-
-[[mounts]]
-  source = "node_modules/@thulite/images/layouts"
+  source = "layouts"
   target = "layouts"
 
 [[mounts]]
@@ -74,7 +70,15 @@
   target = "layouts"
 
 [[mounts]]
-  source = "layouts"
+  source = "node_modules/@thulite/images/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@thulite/seo/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@thulite/core/layouts"
   target = "layouts"
 
 ## static

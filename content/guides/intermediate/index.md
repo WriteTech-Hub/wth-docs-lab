@@ -83,13 +83,13 @@ Docs-as-code means managing documentation with the same tools and workflows used
 
 ### Video tutorials
 
-The following sessions from the WriteTech Accelerator Program cover docs-as-code and Docusaurus in a practical, hands-on format. Watch sessions 1 and 2 alongside this section, and sessions 3 through 7 when you are ready to work with Docusaurus.
+The following sessions from the WriteTech Accelerator Program cover docs-as-code and Docusaurus in a practical, hands-on format. Watch the first two sessions alongside this section, and the third when you are ready to build your portfolio project in Docusaurus.
 
-| # | Video | Duration |
-|:---|:---|:---|
-| 1 | [Week 1, Session 1: Docs-as-Code in the Real World](https://www.youtube.com/watch?v=6xmj_ynoW8w&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=20) | 1:31:32 |
-| 2 | [Week 1, Session 2: Setting Up and Customizing Docusaurus](https://www.youtube.com/watch?v=exlr31Jc_fY&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=19) | 1:53:09 |
-| 3 | [Portfolio Project Setup and Docusaurus Practical Session](https://www.youtube.com/watch?v=4suE8xPaLHE&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=18) | 1:59:19 |
+{{< watchlist >}}
+{{< watch id="6xmj_ynoW8w" title="Week 1, Session 1: Docs-as-Code in the Real World" time="1:31:32" >}}
+{{< watch id="exlr31Jc_fY" title="Week 1, Session 2: Setting Up and Customizing Docusaurus" time="1:53:09" >}}
+{{< watch id="4suE8xPaLHE" title="Portfolio Project Setup and Docusaurus Practical Session" time="1:59:19" >}}
+{{< /watchlist >}}
 
 ### Communities
 
@@ -130,7 +130,7 @@ Once your repository is ready:
 - Share the repository or pull request in the [WriteTech Hub community](https://writetechhub.org) for feedback
 - Then merge the pull request after applying feedback
 
-The goal is to complete the full docs-as-code workflow at least once: set up â†’ write â†’ commit â†’ pull request â†’ review â†’ revise â†’ merge â†’ publish.
+The goal is to complete the full docs-as-code workflow at least once: set up → write → commit → pull request → review → revise → merge → publish.
 
 ## 3. API documentation
 
@@ -153,12 +153,12 @@ Start by learning to read an API before you try to document one.
 
 ### Video Tutorials
 
-| # | Video | Duration |
-|:---|:---|:---|
-| 1 | [API Documentation 101: Best Practices for Writing Clear and Useful API Docs](https://www.youtube.com/watch?v=Gpq6wW9QrPU&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=10) | 1:09:54 |
-| 2 | [Week 2, Session 1: Understanding and Testing APIs](https://www.youtube.com/watch?v=9O-jK-OHggQ&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=17) | 2:09:36 |
-| 3 | [Week 2, Session 2: Writing API Docs and Working with OpenAPI](https://www.youtube.com/watch?v=5OKP5V2wiC4&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=16) | 2:02:15 |
-| 4 | [Documenting and Building with the Chimoney API](https://www.youtube.com/watch?v=64tWtTOSGbk&list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU&index=15) | 1:01:41 |
+{{< watchlist >}}
+{{< watch id="Gpq6wW9QrPU" title="API Documentation 101: Best Practices for Writing Clear and Useful API Docs" time="1:09:54" >}}
+{{< watch id="9O-jK-OHggQ" title="Week 2, Session 1: Understanding and Testing APIs" time="2:09:36" >}}
+{{< watch id="5OKP5V2wiC4" title="Week 2, Session 2: Writing API Docs and Working with OpenAPI" time="2:02:15" >}}
+{{< watch id="64tWtTOSGbk" title="Documenting and Building with the Chimoney API" time="1:01:41" >}}
+{{< /watchlist >}}
 
 ### Practice
 
@@ -232,7 +232,7 @@ Move beyond basic prompts to systematic approaches that produce consistent, reli
 
 - **Few-shot prompting with reusable templates:** build a library of prompt templates for common documentation tasks that include 2-3 examples of the desired output format
 - **Chain-of-thought prompting:** for complex explanations, ask the AI to work through its reasoning step by step before giving the final answer. This produces more accurate technical explanations and helps you spot where the AI's logic diverges from reality
-- **Prompt chaining:** break multi-step documentation tasks into a sequence of prompts where each step feeds into the next. For example: research notes â†’ structured outline â†’ first draft â†’ style review â†’ final edit
+- **Prompt chaining:** break multi-step documentation tasks into a sequence of prompts where each step feeds into the next. For example: research notes → structured outline → first draft → style review → final edit
 
 **Prompt chaining example:**
 
@@ -312,7 +312,7 @@ Specific risks at this level:
 Pick a documentation task you have already completed manually in this guide” such as the API endpoint documentation, the Vale configuration, or the information architecture redesign. Use AI to:
 
 1. Generate a first draft from your existing notes or source material
-2. Apply prompt chaining: break the task into steps (research â†’ outline â†’ draft â†’ edit) and use a separate prompt for each step
+2. Apply prompt chaining: break the task into steps (research → outline → draft → edit) and use a separate prompt for each step
 3. Review the AI output for consistency, accuracy, and tone against your style guide
 4. Build a reusable prompt template for this task type, tested and documented with notes on what works
 5. Share your prompt template with a peer and compare results
@@ -387,6 +387,23 @@ At this level, the goal is to have real work to show. Potential employers and co
 | Mock project documentation | Choose a tool or workflow you know well and write complete documentation for it from scratch. Apply everything from this level: clean IA, docs-as-code workflow, Vale in CI. | Your own GitHub |
 | Writing challenges | Join a structured writing challenge to practise producing documentation under time constraints. | [Write-a-Thon](https://github.com/WriteTech-Hub/wth-write-a-thon) and similar events |
 
+## 8. Video tutorials (WriteTech Hub)
+
+The sessions linked in the sections above are from the WriteTech Accelerator Program. If you would rather watch them in one place, you can follow the full [WriteTech Accelerator Program 2025 playlist](https://www.youtube.com/playlist?list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU) on YouTube.
+
+| # | Video | Duration |
+|:---|:---|:---|
+| 1 | [Week 1, Session 1: Docs-as-Code in the Real World](https://www.youtube.com/watch?v=6xmj_ynoW8w) | 1:31:32 |
+| 2 | [Week 1, Session 2: Setting Up and Customizing Docusaurus](https://www.youtube.com/watch?v=exlr31Jc_fY) | 1:53:09 |
+| 3 | [Portfolio Project Setup and Docusaurus Practical Session](https://www.youtube.com/watch?v=4suE8xPaLHE) | 1:59:19 |
+| 4 | [API Documentation 101: Best Practices for Writing Clear and Useful API Docs](https://www.youtube.com/watch?v=Gpq6wW9QrPU) | 1:09:54 |
+| 5 | [Week 2, Session 1: Understanding and Testing APIs](https://www.youtube.com/watch?v=9O-jK-OHggQ) | 2:09:36 |
+| 6 | [Week 2, Session 2: Writing API Docs and Working with OpenAPI](https://www.youtube.com/watch?v=5OKP5V2wiC4) | 2:02:15 |
+| 7 | [Documenting and Building with the Chimoney API](https://www.youtube.com/watch?v=64tWtTOSGbk) | 1:01:41 |
+| 8 | [Week 3, Session 4: Documentation Workflows and AI Integration](https://www.youtube.com/watch?v=iqcjz8WMriE) | 1:13:29 |
+| 9 | [Week 4, Session 2: Using AI Tools in Your Documentation Workflow](https://www.youtube.com/watch?v=IoOtk7Ad3X8) | 1:04:55 |
+
+{{% capstone %}}
 ## Capstone deliverable
 
 Before moving to the Advanced level, build a complete portfolio-ready documentation project. In your capstone project, you may use AI to support drafting, restructuring, or editing your documentation. However, your final submission should clearly reflect your understanding of the system you are documenting.
@@ -470,3 +487,4 @@ No matter which project you choose, your documentation must also include:
 This project does not need to document a real product. A well-executed mock or a meaningful open-source contribution both count. What matters is that it demonstrates the full skill set from this level: structure, technical depth, workflow discipline, and quality control.
 
 When you can build something like this without needing to look up every step, you are ready for Advanced Resources.
+{{% /capstone %}}

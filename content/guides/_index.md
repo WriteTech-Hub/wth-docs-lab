@@ -56,9 +56,3 @@ You can engage with us by:
 - Joining our [Slack community](https://writetechhub.org) to connect, ask questions, and get faster feedback from other writers
 
 Don't wait until you feel ready. Start early, share your work, and improve through feedback. That's how technical writers grow.
-
----
-
-**Contact**: [info@writetechhub.org](mailto:info@writetechhub.org)
-**Website**: [writetechhub.org](https://writetechhub.org)
-**Community**: [WriteTech Hub](https://writetechhub.org)

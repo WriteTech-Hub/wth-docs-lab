@@ -1,4 +1,8 @@
 {{ define "main" }}
+	<div class="wth-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<div class="wth-progress__bar"></div>
+		<span class="wth-progress__label">0% read</span>
+	</div>
 	<div class="row flex-xl-nowrap">
 		{{ if (in site.Params.doks.sectionNav .Section) -}}
 		<div class="col-lg-5 col-xl-4 docs-sidebar{{ if ne site.Params.doks.navbarSticky true }} docs-sidebar-top{{ end }}{{ if site.Params.doks.headerBar }} docs-sidebar-offset{{ end }} d-none d-lg-block">

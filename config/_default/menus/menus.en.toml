@@ -46,6 +46,11 @@
 #   weight = 30
 
 [[main]]
+  name = "My progress"
+  url = "/progress/"
+  weight = 5
+
+[[main]]
   name = "Services"
   url = "https://writetechhub.org/#services"
   weight = 30
@@ -73,6 +78,22 @@
   url = "https://github.com/WriteTech-Hub/wth-docs-lab"
   post = "v0.1.0"
   weight = 30
+
+# Side navigation shown on every page in the guides section
+[[sidebar_guides]]
+  name = "Beginner"
+  pageRef = "/guides/beginner"
+  weight = 20
+
+[[sidebar_guides]]
+  name = "Intermediate"
+  pageRef = "/guides/intermediate"
+  weight = 30
+
+[[sidebar_guides]]
+  name = "Advanced"
+  pageRef = "/guides/advanced"
+  weight = 40
 
 # [[sidebar_docs]]
 #   name = "Guides"
