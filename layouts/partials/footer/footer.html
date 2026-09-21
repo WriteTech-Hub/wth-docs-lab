@@ -1,0 +1,23 @@
+<footer class="footer text-muted">
+  <div class="container-{{ site.Params.doks.containerBreakpoint | default "lg" }}">
+    <ul class="list-inline wth-footer__contact">
+      <li class="list-inline-item"><span class="wth-footer__label">Contact</span> <a class="text-muted" href="mailto:info@writetechhub.org">info@writetechhub.org</a></li>
+      <li class="list-inline-item"><span class="wth-footer__label">Website</span> <a class="text-muted" href="https://writetechhub.org">writetechhub.org</a></li>
+      <li class="list-inline-item"><span class="wth-footer__label">Community</span> <a class="text-muted" href="https://writetechhub.org/our-community/">WriteTech Hub</a></li>
+    </ul>
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          {{ range .Site.Menus.footer -}}
+            <li class="list-inline-item"><a class="text-muted" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">{{ site.Params.footer | safeHTML }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

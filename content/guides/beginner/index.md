@@ -15,7 +15,7 @@ seo:
   robots: ""
 ---
 
-This level is for people who are new to technical writing or are still trying to understand what the role actually involves. The goal here is not to read everything available on the subject. It is to build enough of a foundation that you can sit down and write something useful for a  reader.
+This level is for people who are new to technical writing or are still trying to understand what the role actually involves. The goal here is not to read everything available on the subject. It is to build enough of a foundation that you can sit down and write something useful for a reader.
 
 You will cover four areas in this order: *writing clearly, understanding document types, applying a style guide, and working with the people who have the information you need*. You will then add two practical skills every technical writer needs: *version control with Git and GitHub, and contributing to open source*. Each section has resources and a practice exercise. Do not skip the practice.
 
@@ -33,7 +33,9 @@ The [ADOC Studio guide, "Technical Writing: A Comprehensive Guide (2026)"](https
 
 ### Watch
 
-- [Week 1: Introduction to Technical Writing](https://www.youtube.com/watch?v=-B7cDScFhhQ) by Maryann Agofure (1:06:50)
+{{< watchlist >}}
+{{< watch id="-B7cDScFhhQ" title="Week 1: Introduction to Technical Writing" by="Maryann Agofure" time="1:06:50" >}}
+{{< /watchlist >}}
 
 ## 2. Writing clearly
 
@@ -56,7 +58,9 @@ Before you move further, get comfortable with these ideas:
 
 ### Watch
 
-- [Week 1, Session 2: Core model for technical writing: Preparing a technical document](https://www.youtube.com/watch?v=2qspuTbuokY) by Maryann Agofure (38:06)
+{{< watchlist >}}
+{{< watch id="2qspuTbuokY" title="Week 1, Session 2: Core model for technical writing: Preparing a technical document" by="Maryann Agofure" time="38:06" >}}
+{{< /watchlist >}}
 
 ### Practice
 
@@ -88,7 +92,9 @@ The [Diataxis framework](https://diataxis.fr/) is the primary reference. It is s
 
 ### Watch
 
-- [Early-Stage Documentation: From Chaos to Clarity](https://www.youtube.com/watch?v=Qg0YvqT1XF8) by Ruth Cheesly (1:27:22)
+{{< watchlist >}}
+{{< watch id="Qg0YvqT1XF8" title="Early-Stage Documentation: From Chaos to Clarity" by="Ruth Cheesly" time="1:27:22" >}}
+{{< /watchlist >}}
 
 ### Practice
 
@@ -110,8 +116,10 @@ Other widely used style guides in the industry include the [Microsoft Writing St
 
 ### Watch
 
-- [Week 2: Formatting & Style Guides](https://www.youtube.com/watch?v=UERNlqYCPJ4) by Light Olumide (1:09:54)
-- [Week 2, Session 2: Writing & Editing with Markdown](https://www.youtube.com/watch?v=42jGDdHiyOY) by Light Segun Olumide (1:39:23)
+{{< watchlist >}}
+{{< watch id="UERNlqYCPJ4" title="Week 2: Formatting & Style Guides" by="Light Olumide" time="1:09:54" >}}
+{{< watch id="42jGDdHiyOY" title="Week 2, Session 2: Writing & Editing with Markdown" by="Light Segun Olumide" time="1:39:23" >}}
+{{< /watchlist >}}
 
 ### Practice
 
@@ -221,10 +229,12 @@ Work through these sessions in order. The first explains why version control mat
 
 ### Watch
 
-1. [Week 3: Introduction to Version Control for Writers](https://www.youtube.com/watch?v=knUB0pFiams) by Opemipo Jokotagba (2:56:26)
-2. [Week 3, Sessions 2 & 3: Git Basics & Collaborating with GitHub](https://www.youtube.com/watch?v=GPbx-6HdoVc) (1:39:32)
-3. [Week 3, Sessions 4 & 5: Mastering Git: Cloning & Open Source Contributions](https://www.youtube.com/watch?v=gR8XY3Hof_M) (1:19:28)
-4. [Week 3: Setting up SSH for GitHub](https://www.youtube.com/watch?v=A1K_Tlw3SP8) by Opemipo Jokotagba (27:12)
+{{< watchlist >}}
+{{< watch id="knUB0pFiams" title="Week 3: Introduction to Version Control for Writers" by="Opemipo Jokotagba" time="2:56:26" >}}
+{{< watch id="GPbx-6HdoVc" title="Week 3, Sessions 2 & 3: Git Basics & Collaborating with GitHub" time="1:39:32" >}}
+{{< watch id="gR8XY3Hof_M" title="Week 3, Sessions 4 & 5: Mastering Git: Cloning & Open Source Contributions" time="1:19:28" >}}
+{{< watch id="A1K_Tlw3SP8" title="Week 3: Setting up SSH for GitHub" by="Opemipo Jokotagba" time="27:12" >}}
+{{< /watchlist >}}
 
 ## 8. Contributing to open source
 
@@ -234,8 +244,10 @@ Once you are comfortable with Git and GitHub, these sessions show how open sourc
 
 ### Watch
 
-1. [Week 4: Introduction to Open Source for Technical Writers](https://www.youtube.com/watch?v=cRH0UqLkNzA) by Oluchi Nwenyi (1:00:03)
-2. [Week 4, Session 2: Writing for Open Source + Making Contributions](https://www.youtube.com/watch?v=Zmw75G8dyuo) by Oluchi Nwenyi (1:08:43)
+{{< watchlist >}}
+{{< watch id="cRH0UqLkNzA" title="Week 4: Introduction to Open Source for Technical Writers" by="Oluchi Nwenyi" time="1:00:03" >}}
+{{< watch id="Zmw75G8dyuo" title="Week 4, Session 2: Writing for Open Source + Making Contributions" by="Oluchi Nwenyi" time="1:08:43" >}}
+{{< /watchlist >}}
 
 ## 9. Video tutorials (WriteTech Hub)
 
@@ -272,6 +284,7 @@ Once you have a sense of the field, introduce yourself in the [WriteTech Hub com
 - Share your completed tasks for a review
 - Share what confuses you most right now about technical writing
 
+{{% capstone %}}
 ## Capstone deliverable
 
 Before moving to the Intermediate level, produce a small documentation set for a tool or process you know well. This could be tools such as Google Docs, Notion, GitHub, or Gmail. It should include:
@@ -288,3 +301,4 @@ If you use AI during this process, your final documentation should show your und
 What matters is how clearly and consistently you structure the documentation across different content types.
 
 This is your evidence that you understand the fundamentals and can produce documentation across different content types. When you can complete it without hesitating, you are ready for Intermediate Resources.
+{{% /capstone %}}

@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{- $levels := slice -}}
+{{- range $key := slice "beginner" "intermediate" "advanced" -}}
+  {{- with site.GetPage (printf "/guides/%s" $key) -}}
+    {{- $page := . -}}
+    {{- $sections := slice -}}
+    {{- $capstone := dict -}}
+    {{- range $i, $chunk := split (string $page.Content) "<h2 " -}}
+      {{- if gt $i 0 -}}
+        {{- $anchor := $chunk | replaceRE `(?s)^[^>]*?id="([^"]+)".*$` "$1" -}}
+        {{- $heading := $chunk | replaceRE `(?s)^[^>]*>(.*?)</h2>.*$` "$1" | plainify | htmlUnescape -}}
+        {{- if hasPrefix $anchor "capstone-deliverable" -}}
+          {{- $capstone = dict "id" "c:capstone" "title" $heading "anchor" (printf "%s#%s" $page.RelPermalink $anchor) -}}
+        {{- else if and (findRE `^\d+\.` $heading) (not (findRE `(?i)video tutorials|further reading` $heading)) -}}
+          {{- $items := slice -}}
+          {{- range findRESubmatch `data-video="([^"]+)" data-title="([^"]*)"` $chunk -}}
+            {{- $items = $items | append (dict "id" (printf "v:%s" (index . 1)) "type" "video" "title" (index . 2 | htmlUnescape)) -}}
+          {{- end -}}
+          {{- range findRESubmatch `(?s)<h3[^>]*?id="([^"]+)"[^>]*>\s*Practice\s*</h3>` $chunk -}}
+            {{- $items = $items | append (dict "id" (printf "p:%s" (index . 1)) "type" "practice" "title" "Practice exercise") -}}
+          {{- end -}}
+          {{- $sections = $sections | append (dict "id" (printf "s:%s" $anchor) "title" $heading "anchor" (printf "%s#%s" $page.RelPermalink $anchor) "items" $items) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $levels = $levels | append (dict "key" $key "title" $page.Title "url" $page.RelPermalink "sections" $sections "capstone" $capstone) -}}
+  {{- end -}}
+{{- end -}}
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    <article class="wth-page wth-dash" data-catalogue="{{ $levels | jsonify }}">
+      <h1>{{ .Title }}</h1>
+      <p class="wth-dash__note">Your progress is saved in this browser only. There is no account and nothing is sent anywhere.</p>
+      <p class="wth-dash__skiphint">Starting at Intermediate or Advanced? Use &ldquo;Mark all done&rdquo; on the levels you already know, and you keep their points.</p>
+      <noscript><p>Progress tracking needs JavaScript. Please turn it on for this site.</p></noscript>
+
+      <div class="wth-dash__continue"></div>
+      <div class="wth-dash__stats"></div>
+      <div class="wth-dash__summary" role="status"></div>
+      <div class="wth-dash__levels"></div>
+
+      <h2>Everything, item by item</h2>
+      <p>Open a level to see each section, video and exercise. Tick or untick anything here, or on the guide page itself.</p>
+      <div class="wth-dash__details"></div>
+
+      <h2 id="backup">Back up, move or clear your progress</h2>
+      <section class="wth-tools" id="progress" aria-label="Back up, move or clear your progress">
+        <p class="wth-tools__note">Save your progress as a file or a code, and load it on another device. Importing always shows you what is inside and asks before adding it. Clearing always asks first.</p>
+        <div class="wth-tools__levels"></div>
+        <div class="wth-tools__buttons">
+          <button type="button" class="wth-check" data-act="download"><span class="wth-check__text">Download file</span></button>
+          <button type="button" class="wth-check" data-act="import-file"><span class="wth-check__text">Import file</span></button>
+        </div>
+        <input type="file" class="wth-tools__file" accept=".json,application/json" hidden aria-label="Choose a progress file">
+        <label class="wth-tools__label" for="wth-progress-code">Or use a text code</label>
+        <textarea class="wth-tools__code" id="wth-progress-code" rows="3" placeholder="Choose Export code to get a code here, or paste a code or file contents and choose Import code."></textarea>
+        <div class="wth-tools__buttons">
+          <button type="button" class="wth-check" data-act="export"><span class="wth-check__text">Export code</span></button>
+          <button type="button" class="wth-check" data-act="import"><span class="wth-check__text">Import code</span></button>
+          <button type="button" class="wth-check" data-act="reset"><span class="wth-check__text">Reset</span></button>
+        </div>
+        <div class="wth-tools__confirm" hidden role="alertdialog" aria-labelledby="wth-confirm-text">
+          <p class="wth-tools__confirm-text" id="wth-confirm-text"></p>
+          <div class="wth-tools__buttons">
+            <button type="button" class="wth-check" data-act="confirm-yes"><span class="wth-check__text">Yes, clear it</span></button>
+            <button type="button" class="wth-check" data-act="confirm-no"><span class="wth-check__text">Cancel</span></button>
+          </div>
+        </div>
+        <p class="wth-tools__status" role="status"></p>
+      </section>
+    </article>
+  </div>
+</div>
+{{ end }}

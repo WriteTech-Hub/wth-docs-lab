@@ -1,0 +1,14 @@
+{{- /* {{< watch id="VIDEO_ID" title="Title" by="Speaker" time="1:06:50" >}} */ -}}
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" -}}
+<figure class="wth-video" data-video="{{ $id }}">
+  <button type="button" class="wth-video__play" data-video="{{ $id }}" data-title="{{ $title }}" aria-label="Play video: {{ $title }}">
+    <img src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+    <span class="wth-video__icon" aria-hidden="true"></span>
+    {{- with .Get "time" }}<span class="wth-video__time">{{ . }}</span>{{ end }}
+  </button>
+  <figcaption class="wth-video__caption">
+    <a href="https://www.youtube.com/watch?v={{ $id }}" target="_blank" rel="noopener">{{ $title }}</a>
+    {{- with .Get "by" }}<span class="wth-video__by">by {{ . }}</span>{{ end }}
+  </figcaption>
+</figure>
