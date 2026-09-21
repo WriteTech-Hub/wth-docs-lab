@@ -17,7 +17,7 @@ seo:
 
 This level is for people who are new to technical writing or are still trying to understand what the role actually involves. The goal here is not to read everything available on the subject. It is to build enough of a foundation that you can sit down and write something useful for a  reader.
 
-You will cover four areas in this order: *writing clearly, understanding document types, applying a style guide, and working with the people who have the information you need*. Each section has resources and a practice exercise. Do not skip the practice.
+You will cover four areas in this order: *writing clearly, understanding document types, applying a style guide, and working with the people who have the information you need*. You will then add two practical skills every technical writer needs: *version control with Git and GitHub, and contributing to open source*. Each section has resources and a practice exercise. Do not skip the practice.
 
 ## 1. What is technical writing?
 
@@ -30,6 +30,10 @@ The [Knowledge Academy's article on "What Is Technical Writing? Types, Examples 
 In 2026, however, the role has expanded. Technical writers are no longer only the people who write manuals and guides after a product is finished. Many now work directly with product teams, take part in planning, review content earlier in the development process, and work alongside AI tools that make writing faster and more efficient.
 
 The [ADOC Studio guide, "Technical Writing: A Comprehensive Guide (2026)"](https://www.adoc-studio.app/blog/technical-writing-guide), provides a look at how technical writing is evolving in modern workflows and what the role looks like today in practice.
+
+### Watch
+
+- [Week 1: Introduction to Technical Writing](https://www.youtube.com/watch?v=-B7cDScFhhQ) by Maryann Agofure (1:06:50)
 
 ## 2. Writing clearly
 
@@ -51,6 +55,10 @@ Before you move further, get comfortable with these ideas:
 3. **[Getting Started in Technical Writing: A Beginner's Guide](https://github.com/Bennykillua/Getting-started-in-Technical-Writing)** covers audience considerations and structured writing in a format you can work through at your own pace.
 
 4. **[TechnicalWritingMP](https://technicalwritingmp.com/)** has beginner-level courses on documentation fundamentals, basic API concepts, and markup languages.
+
+### Watch
+
+- [Week 1, Session 2: Core model for technical writing: Preparing a technical document](https://www.youtube.com/watch?v=2qspuTbuokY) by Maryann Agofure (38:06)
 
 ### Practice
 
@@ -80,6 +88,10 @@ The [Diataxis framework](https://diataxis.fr/), developed by Daniele Procida, gi
 
 The [Diataxis framework](https://diataxis.fr/) is the primary reference. It is short, well-written, and used by documentation teams at Cloudflare, Django, Gatsby, and others. Read it once to understand the model, then come back to it as you write.
 
+### Watch
+
+- [Early-Stage Documentation: From Chaos to Clarity](https://www.youtube.com/watch?v=Qg0YvqT1XF8) by Ruth Cheesly (1:27:22)
+
 ### Practice
 
 Pick a documentation page from a tool you use. Work out which Diataxis type it is supposed to be. If it mixes types (most do), identify where the mixing happens and rewrite one section so it fits cleanly into a single type.
@@ -97,6 +109,11 @@ You do not need to write a full style guide at this stage. You need to understan
 The [Google Developer Documentation Style Guide](https://developers.google.com/style) is the most widely used free style guide in technical writing. Use it as your working default. When you join a team or project that has its own guide, follow that instead.
 
 Other widely used style guides in the industry include the [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-guide/welcome/), which is commonly used for product documentation in enterprise and software environments, and the [Apple Style Guide](https://support.apple.com/en-us/guide/applestyleguide/welcome/web), which is used for consumer-facing documentation across Apple platforms. Some teams also maintain internal style guides that adapt these standards to their own products and workflows.
+
+### Watch
+
+- [Week 2: Formatting & Style Guides](https://www.youtube.com/watch?v=UERNlqYCPJ4) by Light Olumide (1:09:54)
+- [Week 2, Session 2: Writing & Editing with Markdown](https://www.youtube.com/watch?v=42jGDdHiyOY) by Light Segun Olumide (1:39:23)
 
 ### Practice
 
@@ -198,7 +215,49 @@ Take one of your earlier exercises from this guide, such as the how-to guide, qu
 
 Document your prompt, the AI output, and your review notes. This is a portfolio piece that shows you can use AI responsibly and critically, not just generate content.
 
-## 7. Further reading
+## 7. Version control with Git and GitHub
+
+Most documentation today lives alongside code, and the way teams review, track, and publish changes to it is through Git and GitHub. You do not need to become a software engineer. You need to be able to save your work to a repository, see what changed, and propose an edit for someone else to review.
+
+Work through these sessions in order. The first explains why version control matters for writers, the next two build the basic workflow, the fourth covers cloning and contributing, and the last sets up the secure connection to GitHub.
+
+### Watch
+
+1. [Week 3: Introduction to Version Control for Writers](https://www.youtube.com/watch?v=knUB0pFiams) by Opemipo Jokotagba (2:56:26)
+2. [Week 3, Sessions 2 & 3: Git Basics & Collaborating with GitHub](https://www.youtube.com/watch?v=GPbx-6HdoVc) (1:39:32)
+3. [Week 3, Sessions 4 & 5: Mastering Git: Cloning & Open Source Contributions](https://www.youtube.com/watch?v=gR8XY3Hof_M) (1:19:28)
+4. [Week 3: Setting up SSH for GitHub](https://www.youtube.com/watch?v=A1K_Tlw3SP8) by Opemipo Jokotagba (27:12)
+
+## 8. Contributing to open source
+
+Open source projects are one of the best places for a new technical writer to practise. Documentation contributions are welcomed, the work is public, and every accepted change is evidence you can show in a portfolio.
+
+Once you are comfortable with Git and GitHub, these sessions show how open source projects work and how to make your first documentation contribution.
+
+### Watch
+
+1. [Week 4: Introduction to Open Source for Technical Writers](https://www.youtube.com/watch?v=cRH0UqLkNzA) by Oluchi Nwenyi (1:00:03)
+2. [Week 4, Session 2: Writing for Open Source + Making Contributions](https://www.youtube.com/watch?v=Zmw75G8dyuo) by Oluchi Nwenyi (1:08:43)
+
+## 9. Video tutorials (WriteTech Hub)
+
+The sessions linked in the sections above come from the WriteTech Bootcamp 4.0. If you would rather watch them in one place, you can follow the full [WriteTech Bootcamp 4.0 playlist](https://www.youtube.com/playlist?list=PLVlM6pemXydpwV8CDOlHH0h_5lDaGPDRt) on YouTube.
+
+| # | Video | Duration |
+|:---|:---|:---|
+| 1 | [Week 1: Introduction to Technical Writing](https://www.youtube.com/watch?v=-B7cDScFhhQ) | 1:06:50 |
+| 2 | [Week 1, Session 2: Core model for technical writing: Preparing a technical document](https://www.youtube.com/watch?v=2qspuTbuokY) | 38:06 |
+| 3 | [Week 2: Formatting & Style Guides](https://www.youtube.com/watch?v=UERNlqYCPJ4) | 1:09:54 |
+| 4 | [Week 2, Session 2: Writing & Editing with Markdown](https://www.youtube.com/watch?v=42jGDdHiyOY) | 1:39:23 |
+| 5 | [Week 3: Introduction to Version Control for Writers](https://www.youtube.com/watch?v=knUB0pFiams) | 2:56:26 |
+| 6 | [Week 3, Sessions 2 & 3: Git Basics & Collaborating with GitHub](https://www.youtube.com/watch?v=GPbx-6HdoVc) | 1:39:32 |
+| 7 | [Week 3, Sessions 4 & 5: Mastering Git: Cloning & Open Source Contributions](https://www.youtube.com/watch?v=gR8XY3Hof_M) | 1:19:28 |
+| 8 | [Week 3: Setting up SSH for GitHub](https://www.youtube.com/watch?v=A1K_Tlw3SP8) | 27:12 |
+| 9 | [Week 4: Introduction to Open Source for Technical Writers](https://www.youtube.com/watch?v=cRH0UqLkNzA) | 1:00:03 |
+| 10 | [Week 4, Session 2: Writing for Open Source + Making Contributions](https://www.youtube.com/watch?v=Zmw75G8dyuo) | 1:08:43 |
+| 11 | [Early-Stage Documentation: From Chaos to Clarity](https://www.youtube.com/watch?v=Qg0YvqT1XF8) | 1:27:22 |
+
+## 10. Further reading
 
 These are supplementary articles for when you want more context on the field. Read them when you have time:
 

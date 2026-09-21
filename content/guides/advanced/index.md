@@ -135,6 +135,10 @@ This shifts documentation work from being reactive to proactive, as you influenc
 - [Definition of done (DoD): Checklist examples for Agile teams](https://plane.so/blog/definition-of-done-dod-checklist-examples-for-agile-teams) shows how documentation updates fit into story-level, sprint-level, and release-level definitions of done. It emphasizes that unfinished docs create support tickets, delay releases, and force rework, making the case for including documentation as a core completion criterion.
 - [How to manage cross-functional teams effectively](https://plane.so/blog/how-to-manage-cross-functional-teams-effectively) provides a practical system for managing cross-functional collaboration, including aligning on a single shared outcome, defining roles and decision rights, establishing clear communication norms, and running lightweight execution cadences. It emphasizes planning with dependencies and capacity in mind, and managing blockers as first-class work items rather than side conversations. For documentation leaders, this translates to treating content alignment across teams as a project with its own goals, owners, and metrics.
 
+### Watch
+
+- [DevOps and Technical Writing](https://www.youtube.com/watch?v=dseRmGeYbec) (1:11:39)
+
 ## 4. Information architecture at scale
 
 Information architecture at the intermediate level is about structuring a single documentation site well. At the advanced level, it is about structuring documentation systems: multiple products, multiple audiences, multiple versions, potentially multiple languages, all of which need to feel coherent to a reader who may only ever see one corner of the whole system.
@@ -271,6 +275,11 @@ Design an AI-assisted documentation system for a hypothetical product. Your deli
 - [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework): The US National Institute of Standards and Technology framework for managing AI risks, including governance, measurement, and mitigation. Essential for designing responsible AI systems in documentation.
 - [Responsible AI Practices](https://ai.google/responsibility/responsible-ai-practices/): Google's operational guidance on building AI systems responsibly, including fairness, transparency, accountability, and privacy. Useful for establishing team-level AI ethics standards.
 
+### Watch
+
+- [Week 3, Session 4: Documentation Workflows and AI Integration](https://www.youtube.com/watch?v=iqcjz8WMriE) (1:13:29)
+- [Week 4, Session 2: Using AI Tools in Your Documentation Workflow](https://www.youtube.com/watch?v=IoOtk7Ad3X8) (1:04:55)
+
 ## 6. Tooling and automation
 
 At the advanced level, tooling is not about knowing which tools exist. It is about building systems that maintain documentation quality at scale without requiring constant manual oversight. The goal is leverage, meaning the ability to maintain a high-quality documentation programme without headcount growing in proportion to content volume.
@@ -331,6 +340,13 @@ At this level, your job is to decide what should be automated and what must rema
 - [OpenAPI Specification Guide: Structure Implementation & Best Practices](https://swagger.io/resources/open-api/) explains the benefits of OpenAPI for automated documentation and code generation, including standardized machine-readable formats, automatic generation of client SDKs and server stubs, and simplified testing through mock servers. It emphasizes maintaining a single source of truth and using continuous integration to validate specs against actual API behaviour.
 - [Best Practices - OpenAPI Documentation](https://www.openapis.org/) from the OpenAPI Initiative provides authoritative guidance on keeping OpenAPI descriptions as first-class source files, making them available to users for client generation, and using design-first approaches to prevent issues before development begins. It notes that there is seldom need to write OpenAPI descriptions by hand, since editors, domain-specific languages, and code annotations can generate them automatically.
 
+### Watch
+
+- [Week 3, Session 1: Introduction to CI/CD for Technical Writers](https://www.youtube.com/watch?v=mj4HD7NTB4o) (1:40:53)
+- [Week 3, Session 2: Introduction to Automated Linters](https://www.youtube.com/watch?v=VyZoL8KiE7k) (1:56:07)
+- [Week 3, Session 3: Automated Linters for API Documentation](https://www.youtube.com/watch?v=cp6I3zTeshg) (1:49:20)
+- [Week 5, Session 1: Docs in the DevOps Ecosystem](https://www.youtube.com/watch?v=fi5PV5Aynoo) (1:46:50)
+
 ## 7. Documentation specialisations
 
 Advanced writers often develop depth in one or two areas while maintaining broad enough coverage to contribute across a documentation programme. The areas below are the most common specialisations for senior writers.
@@ -345,28 +361,32 @@ Advanced writers often develop depth in one or two areas while maintaining broad
 
 **Long-form and whitepaper content** covers in-depth technical explanations, research summaries, and strategic documents. The skills here overlap with technical writing but extend into document architecture, argument structure, and editorial judgement for long-form work.
 
+### Watch
+
+- [Week 4, Session 1: Documenting AI/ML Systems](https://www.youtube.com/watch?v=uzUsSSI6KiQ) (1:07:52)
+- [Week 5, Session 2: Infrastructure Docs and YAML/Terraform Annotations](https://www.youtube.com/watch?v=kUvaU6do5mg) (2:01:51)
+- [Week 5, Session 3: Getting Started with Terraform for Technical Writers](https://www.youtube.com/watch?v=aislzj1U99o) (1:38:23)
+- [Week 7, Session 2: Web3 Docs in Practice](https://www.youtube.com/watch?v=ECjDnSECsAw) (1:17:40)
+
 ## 8. Video tutorials (WriteTech Hub)
 
-The sessions below are from the WriteTech Accelerator Program. They cover CI/CD, automated linting, AI and ML documentation, infrastructure documentation, DevOps, and Web3. The "relates to" column points to the section above that each video supports.
+The sessions linked in the sections above are from the WriteTech Accelerator Program. If you would rather watch them in one place, you can follow the full [WriteTech Accelerator Program 2025 playlist](https://www.youtube.com/playlist?list=PLVlM6pemXydq-Cqv7gVB_z3sryrA2CzsU) on YouTube.
 
-| Relates to | # | Video | Duration |
-|:---|:---|:---|:---|
-| General review | 1 | WriteTech Accelerator Program Onboarding | 47:02 |
-| Section 1: Content strategy | 2 | Week 3, Session 1: Introduction to CI/CD for Technical Writers | 1:40:53 |
-| Section 5: Tooling | 3 | Week 3, Session 2: Introduction to Automated Linters | 1:56:07 |
-| Section 5: Tooling | 4 | Week 3, Session 3: Automated Linters for API Documentation | 1:49:20 |
-| Section 5: Tooling | 5 | Week 3, Session 4: Documentation Workflows and AI Integration | 1:13:29 |
-| Section 6: Specialisations | 6 | Week 4, Session 1: Documenting AI/ML Systems | 1:07:52 |
-| Section 5: Tooling | 7 | Week 4, Session 2: Using AI Tools in Your Documentation Workflow | 1:04:55 |
-| General review | 8 | Week 5: Ask Me Anything and Feedback, Weeks 1 to 4 | 2:01:37 |
-| Section 5: Tooling | 9 | Week 5, Session 1: Docs in the DevOps Ecosystem | 1:46:50 |
-| Section 6: Developer docs | 10 | Week 5, Session 2: Infrastructure Docs and YAML/Terraform Annotations | 2:01:50 |
-| Section 6: Developer docs | 11 | Week 5, Session 3: Getting Started with Terraform for Technical Writers | 1:38:23 |
-| Section 7: Real-world ownership | 12 | Week 6, Session 1: Open Source DevOps Docs Audit | 1:25:34 |
-| Section 6: Specialisations | 13 | Week 7, Session 2: Web3 Docs in Practice | 1:17:40 |
-| Section 3: Cross-functional influence | 14 | DevOps and Technical Writing | 1:11:39 |
-
-Watch the onboarding session first, then follow the CI/CD and linting cluster (sessions 2 to 5) alongside section 5. The DevOps and infrastructure sessions (9 to 12) work best once you are comfortable with tooling. The AI/ML and Web3 sessions (6 to 7, 13) are domain-specific deep dives for when you are exploring a particular specialisation.
+| # | Video | Duration |
+|:---|:---|:---|
+| 1 | [Week 3, Session 1: Introduction to CI/CD for Technical Writers](https://www.youtube.com/watch?v=mj4HD7NTB4o) | 1:40:53 |
+| 2 | [Week 3, Session 2: Introduction to Automated Linters](https://www.youtube.com/watch?v=VyZoL8KiE7k) | 1:56:07 |
+| 3 | [Week 3, Session 3: Automated Linters for API Documentation](https://www.youtube.com/watch?v=cp6I3zTeshg) | 1:49:20 |
+| 4 | [Week 3, Session 4: Documentation Workflows and AI Integration](https://www.youtube.com/watch?v=iqcjz8WMriE) | 1:13:29 |
+| 5 | [Week 4, Session 1: Documenting AI/ML Systems](https://www.youtube.com/watch?v=uzUsSSI6KiQ) | 1:07:52 |
+| 6 | [Week 4, Session 2: Using AI Tools in Your Documentation Workflow](https://www.youtube.com/watch?v=IoOtk7Ad3X8) | 1:04:55 |
+| 7 | [Week 5: Ask Me Anything and Feedback, Weeks 1 to 4](https://www.youtube.com/watch?v=2o1f8rNLqos) | 2:01:37 |
+| 8 | [Week 5, Session 1: Docs in the DevOps Ecosystem](https://www.youtube.com/watch?v=fi5PV5Aynoo) | 1:46:50 |
+| 9 | [Week 5, Session 2: Infrastructure Docs and YAML/Terraform Annotations](https://www.youtube.com/watch?v=kUvaU6do5mg) | 2:01:51 |
+| 10 | [Week 5, Session 3: Getting Started with Terraform for Technical Writers](https://www.youtube.com/watch?v=aislzj1U99o) | 1:38:23 |
+| 11 | [Week 6, Session 1: Open Source DevOps Docs Audit](https://www.youtube.com/watch?v=Tb_gfKItbV8) | 1:25:34 |
+| 12 | [Week 7, Session 2: Web3 Docs in Practice](https://www.youtube.com/watch?v=ECjDnSECsAw) | 1:17:40 |
+| 13 | [DevOps and Technical Writing](https://www.youtube.com/watch?v=dseRmGeYbec) | 1:11:39 |
 
 ## 9. Ownership and community contribution
 
@@ -431,6 +451,10 @@ At this stage, speaking at documentation, developer, or technical writing events
 - [Document workflow management: A practical guide](https://plane.so/blog/definition-of-done-dod-checklist-examples-for-agile-teams) explains how to monitor document workflows using metrics like processing time, approval speed, and retrieval time, and how to optimize using templates and automated checks.
 - [Data Governance Policy Template & Guide](https://www.figma.com/resource-library/what-is-information-architecture/) offers a complete governance policy template that can be adapted for documentation standards, covering purpose, scope, governance roles and responsibilities, classification, quality requirements, training and awareness, and review cadence. It demonstrates how to structure policy documents so they are actionable and maintainable over time.
 - [Tools for Collaborating in Technical Writing Teams](https://www.projectmanager.com/blog/6-tips-developing-cross-functional-teams) outlines how to improve collaboration beyond tools alone by establishing clear roles, creating shared style guides, adopting version control systems, centralizing communication channels, and making feedback a normalized part of the process. It emphasizes encouraging early edits and reviews rather than late-stage revisions, and having clear guidelines for revision cycles to prevent endless review loops.
+
+### Watch
+
+- [Week 6, Session 1: Open Source DevOps Docs Audit](https://www.youtube.com/watch?v=Tb_gfKItbV8) (1:25:34)
 
 ## 10. Career paths and staying current
 
