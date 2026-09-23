@@ -1311,10 +1311,10 @@ footer {
 .docs-content .wth-capstone {
   position: relative;
   margin: 5rem 0 2rem;
-  background: var(--wth-primary);
+  background: var(--wth-nav);
   color: #fff;
-  border: var(--wth-border-thick);
-  box-shadow: 10px 10px 0 var(--wth-shade);
+  border: 4px solid var(--wth-primary);
+  box-shadow: 10px 10px 0 var(--wth-primary);
 
   &::before {
     content: "";
@@ -1390,10 +1390,10 @@ footer {
   }
 
   pre {
-    background: #1e1b1d;
+    background: #2a252b;
     color: #fefefe;
-    border-color: #fefefe;
-    box-shadow: 4px 4px 0 #1e1b1d;
+    border-color: var(--wth-accent);
+    box-shadow: 4px 4px 0 var(--wth-primary);
   }
 
   ul li::marker,
@@ -1562,7 +1562,7 @@ footer {
   background: #fefefe;
   color: #1e1b1d;
   border-color: #1e1b1d;
-  box-shadow: 4px 4px 0 #1e1b1d;
+  box-shadow: 4px 4px 0 var(--wth-primary);
 
   &[aria-pressed="true"] {
     background: var(--wth-accent);
@@ -2542,8 +2542,8 @@ body.single.guides .header-bar {
 .wth-capstone__review {
   margin: 0;
   padding: 1rem 1.5rem 1.25rem;
-  background: rgba(0, 0, 0, 0.28);
-  border-top: 4px solid #1e1b1d;
+  background: rgba(132, 12, 214, 0.28);
+  border-top: 4px solid var(--wth-primary);
   color: #fff;
   font-size: 0.95rem;
   line-height: 1.55;

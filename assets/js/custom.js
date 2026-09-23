@@ -432,7 +432,7 @@
       link.target = '_blank';
       link.rel = 'noopener';
       note.appendChild(link);
-      note.appendChild(document.createTextNode(' so other writers can review it.'));
+      note.appendChild(document.createTextNode(' so other writers can give you feedback.'));
       panel.appendChild(note);
     }
 
